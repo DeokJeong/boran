@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* 초기화 */
+body,div,header,ul,li,article,section,footer,h1,h2,h3,hr,dt,dd,dl{margin:0;padding:0;}
+hr{border:none;}
+.hidden{display:none;}
+ul,li{list-style:none; }
+a{text-decoration:none; color:dimgray;}
+
+/* 해더영역 */
+header{width:1300px; height:135px; margin:0 auto; text-transform:uppercase;}
+header div.titleArea{height:30px; padding:21px 0; }
+header .utilmenu{width:121px;height:30px; float:left; margin-right:464px; text-indent:-9999px;}
+header .utilmenu li{width:25px; height:30px; float:left; margin-right:23px; background-repeat:no-repeat; background-position:center;}
+div.utilmenu li:nth-child(1) span{display:block; height:2px; background-color:dimgray; margin:0 0 10px 0;}
+div.utilmenu li:nth-child(1) span:nth-child(1){margin-top:3px;}
+div.utilmenu li:nth-child(2){background-image:url(../images/icon_location.png)}
+div.utilmenu li:last-child{margin-right:0; background-image:url(../images/icon_search.png); background-size:100%;}
+
+/* 로고 */
+header div.titleArea h1{width:142px; height:30px; text-indent:-9999px; float:left; background:url(../images/logo.png) no-repeat; }
+
+/* 언어 */
+header div.titleArea div.lang{width:120px; height:30px; float:right;}
+header div.titleArea div.lang li{width:60px; height:30px; float:left; text-align:center; line-height:30px; box-sizing:border-box;}
+header div.titleArea div.lang li a{color:#ccc}
+header div.titleArea div.lang li.on {border-radius:15px; border:1px solid #ccc;}
+header div.titleArea div.lang li.on a {color:#000; font-weight:bold;}
+
+/* hr */
+header div.titleArea + hr{height:1px; background-color:#eee;}
+header + hr{height:1px; background-color:#eee; margin-bottom:80px;}
+
+/* nav */
+header nav{height:60px; line-height:60px;}
+header nav li{float:left; padding:0 56px; }
+header nav li a.on{font-weight:bold; border-bottom:2px solid #000; padding-bottom:18px;}
+header nav li:hover a{font-weight:bold; border-bottom:2px solid #000; padding-bottom:18px;}
+
+div#contents{width:1300px;margin:0 auto;}
+/* 비주얼영역 */
+article{height:400px; background:url(../images/img.jpg) no-repeat top center; background-size:cover; margin-bottom:64px;}
+
+/* 컨텐츠영역 */
+section {overflow:hidden;}
+
+section div.filter{height:90px; background-color:#ccc; margin-bottom:80px; padding:30px 60px 30px 0; box-sizing:border-box;}
+section div.filter > div{width:160px; height:30px;  float:right; line-height:30px; font-size:16px; cursor:pointer;}
+section div.filter > div > span{display:block; width:100px; height:30px; float:left; background:url(../images/icon_filter.png) no-repeat left center; text-align:right;}
+section div.filter > div > p{width:50px; height:30px; float:right; background:#b4b4b4; border-radius:15px; text-indent:-9999px; margin:0 auto;}
+section div.filter > div > p > span{display:block; width:24px; height:24px; background-color:#fff; border-radius:100%; margin:3px;}
+
+section div.product{margin-bottom:120px; overflow:hidden;}
+section div.product li{width:25%; height:330px; margin-bottom:120px; float:left; box-sizing:border-box;}
+section div.product li:hover{border:2px solid #888; box-sizing:border-box;}
+section div.product li dt{text-indent:-9999px; height:300px; background-repeat:no-repeat; background-position:top center; background-size:70%;}
+section div.product li dd{width:80%; line-height:20px; font-size:12px; text-align:center; margin:0 auto;}
+
+section div.product li:nth-child(1) dt{background-image:url(../images/20210716095158717f81f8-be2e-4258-8a55-9eba072b1afb.jpg);}
+section div.product li:nth-child(2) dt{background-image:url(../images/2021050207483502ea4b70-9beb-46d3-9646-129a252e2e71.jpg);}
+section div.product li:nth-child(3) dt{background-image:url(../images/BO00105476_84795454.jpg);}
+section div.product li:nth-child(4) dt{background-image:url(../images/BO00105463_37591022.jpg);}
+section div.product li:nth-child(5) dt{background-image:url(../images/BO00105457_00612921.jpg);}
+section div.product li:nth-child(6) dt{background-image:url(../images/BO00105450_43028842.jpg);}
+section div.product li:nth-child(7) dt{background-image:url(../images/BO00076645_87994805.jpg);}
+section div.product li:nth-child(8) dt{background-image:url(../images/BO00081578_87351866.jpg);}
+section div.product li:nth-child(9) dt{background-image:url(../images/BO00081577_01433929.jpg);}
+section div.product li:nth-child(10) dt{background-image:url(../images/BO00081575_27793076.jpg);}
+section div.product li:nth-child(11) dt{background-image:url(../images/BO00081574_85293616.jpg);}
+section div.product li:nth-child(12) dt{background-image:url(../images/BO00081573_25537604.jpg);}
+section div.product li:nth-child(13) dt{background-image:url(../images/BO00081572_04114796.jpg);}
+section div.product li:nth-child(14) dt{background-image:url(../images/BO00081571_62774999.jpg);}
+section div.product li:nth-child(15) dt{background-image:url(../images/BO00081570_67133785.jpg);}
+section div.product li:nth-child(16) dt{background-image:url(../images/BO00081569_73814312.jpg);}
+section div.product li:nth-child(17) dt{background-image:url(../images/BO00078836_68566244.jpg);}
+section div.product li:nth-child(18) dt{background-image:url(../images/BO00076642_23957498.jpg);}
+section div.product li:nth-child(19) dt{background-image:url(../images/BO00076635_19012289.jpg);}
+section div.product li:nth-child(20) dt{background-image:url(../images/BO00076631_33267225.jpg);}
+
+
+section div.paging{width:396px; height:44px; margin:0 auto;}
+section div.paging li{width:46px; height:46px; float:left; margin-right:10px;background-repeat:no-repeat; background-position:center; text-align:center; line-height:46px;}
+section div.paging li a.on{border-bottom:2px solid #000;}
+section div.paging li:nth-child(1){background-image:url(../images/btn_first.png); text-indent:-9999px}
+section div.paging li:nth-child(2){background-image:url(../images/btn_prev.png); text-indent:-9999px}
+section div.paging li:nth-child(3){}
+section div.paging li:nth-child(4){}
+section div.paging li:nth-child(5){}
+section div.paging li:nth-child(6){background-image:url(../images/btn_next.png); text-indent:-9999px}
+section div.paging li:nth-child(7){background-image:url(../images/btn_last.png); text-indent:-9999px}
+
+
+/* 푸터영역 */
+div#footerArea{height:410px; background-color:#000; font-size:14px;}
+div#footerArea footer{width:1300px; height:210px; margin:100px auto; position:relative; top:100px; color:#676767;}
+div#footerArea footer a{color:#676767;}
+
+/* h1 & adressArea */
+div#footerArea footer h1{width:158px; height:41px; background:url(../images/footer_logo.png) no-repeat; float:left; margin-right:70px; text-indent:-9999px;}
+
+div#footerArea footer div.adressArea{float:left; line-height:24px;}
+div#footerArea footer div.adressArea > p:nth-child(1){margin-bottom:80px;}
+div#footerArea footer div.adressArea > p:nth-child(1) a{padding-right:45px; font-weight:bold;}
+div#footerArea footer div.adressArea > p:nth-child(1) a:hover{color:#fff;}
+div#footerArea footer div.adressArea address{font-style:normal; color:#fff; font-weight:bold; margin-bottom:30px;}
+div#footerArea footer div.adressArea address span{display:block; padding:0 20px 0 0;  float:left;}
+div#footerArea footer div.adressArea address p span:nth-child(1):after{content:""; display:inline-block; width:1px; height:10px; background-color:#fff; margin-left:20px;}
+div#footerArea footer div.adressArea p small{float:left; margin:24px 0 0 ;}
+
+/* social */
+div#footerArea footer div.social{width:245px; height:210px; float:right; }
+div#footerArea footer div.social ul{height:32px; margin-bottom:110px; }
+div#footerArea footer div.social ul li{height:45px; float:left; font-size:0; text-indent: -9999px;}
+div#footerArea footer div.social li:nth-child(1){width:50px; background:url(../images/icon_youtube.png) left center no-repeat; text-indent:-9999px;}
+div#footerArea footer div.social li:nth-child(2){width:55px; background:url(../images/icon_instargram.png) center center no-repeat; text-indent:-9999px;}
+div#footerArea footer div.social li:nth-child(3){margin-right:0; width:30px; background:url(../images/icon_facebook.png) right center no-repeat; text-indent:-9999px;}
+div#footerArea footer div.social div.familySite{height:46px; border:1px solid #7a7a7a; line-height:46px; text-indent:24px; background:url(../images/arrow_family_site.png) no-repeat right center; }

@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+.contact{
+    width: 100vw;
+    height: 95vh;
+    position: relative;
+    background: #f2c1bd;
+}
+
+.wrap7 {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 90%;
+}
+.contact_title {
+    width: 100%;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'GmarketSansLight';
+    color: #000;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+}
+
+#contact_data {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+}
+
+#contact_data > p {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 0.9vw;
+  font-weight: 400;
+  font-family: 'GmarketSansLight';
+  font-weight: bold;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 20px;
+  font-size : 1vw;
+  font-family: 'GmarketSansBold';
+}
+@media screen and (max-width:599px) {
+  #contact_data > p {
+    font-size: 2.5vw;
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 20px;
+    font-size : 2.7vw;
+    font-family: 'GmarketSansBold';
+}
+
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+/* 전송버튼 */
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #d89791;
+  color: #fff;
+  margin: 0 0 10px;
+  padding: 20px;
+  font-size : 1vw;
+  font-weight: bold;
+  font-family: 'GmarketSansBold';
+}
+
+#contact button[type="submit"]:hover {
+  background: #734b43;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* 하단문구 */
+
+.kakaotalk {
+  text-align: center;
+  font-family: 'GmarketSansLight';
+}
+
+.kakaotalk span {
+    color: #d54639;
+}
+
+.kakaotalk a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 25px auto;
+    color: #ff5900;
+    font-size: 24px;
+    transition: 0.5s;
+    font-family: 'GmarketSansBold';
+}
+
+.kakaotalk a:hover {
+    display: block;
+    color: #ffae00;
+    font-size: 27px;
+}
+
+/* 마우스커서로 클릭 할 경우(focus) */
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+/* input 안에 있는 text 색 */
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #d89791;
+}
+
+footer p {
+    text-align: center;
+    font-family: '777Balsamtint';
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+}

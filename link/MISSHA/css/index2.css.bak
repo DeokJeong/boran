@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* 초기화 */
+body,div,header,ul,li,article,section,footer,h1,h2,h3,hr,dt,dd,dl{margin:0;padding:0;}
+hr{border:none;}
+.hidden{display:none;}
+ul,li{list-style:none; }
+a{text-decoration:none; color:dimgray;}
+
+/* 해더영역 */
+header{width:1300px; height:135px; margin:0 auto; text-transform:uppercase;}
+header div.titleArea{height:30px; padding:21px 0; }
+header .utilmenu{width:121px;height:30px; float:left; margin-right:464px; text-indent:-9999px;}
+header .utilmenu ul{}
+header .utilmenu li{width:25px; height:30px; float:left; margin-right:23px; background-repeat:no-repeat; background-position:center;}
+div.utilmenu li:nth-child(1) span{display:block; height:2px; background-color:dimgray; margin:0 0 10px 0;}
+div.utilmenu li:nth-child(1) span:nth-child(1){margin-top:3px;}
+div.utilmenu li:nth-child(2){background-image:url(../images/icon_location.png)}
+div.utilmenu li:last-child{margin-right:0; background-image:url(../images/icon_search.png); background-size:100%;}
+
+/* 로고 */
+header div.titleArea h1{width:142px; height:30px; text-indent:-9999px; float:left; background:url(../images/logo.png) no-repeat; }
+
+/* 언어 */
+header div.titleArea div.lang{width:120px; height:30px; float:right;}
+header div.titleArea div.lang li{width:60px; height:30px; float:left; text-align:center; line-height:30px; box-sizing:border-box;}
+header div.titleArea div.lang li a{color:#ccc}
+header div.titleArea div.lang li.on {border-radius:15px; border:1px solid #ccc;}
+header div.titleArea div.lang li.on a {color:#000; font-weight:bold;}
+
+/* hr */
+header div.titleArea + hr{height:1px; background-color:#eee;}
+header + hr{height:1px; background-color:#eee; margin-bottom:80px;}
+
+/* nav */
+header nav{height:60px; line-height:60px;}
+header nav li{float:left; padding:0 56px; }
+header nav li a.on{font-weight:bold; border-bottom:2px solid #000; padding-bottom:18px;}
+
+div#contents{width:1300px;margin:0 auto;}
+/* 비주얼영역 */
+article{height:400px; background:url(../images/img.jpg) no-repeat top center; background-size:cover; margin-bottom:64px;}
+
+/* 컨텐츠영역 */
+section {overflow:hidden;}
+section div.filter{height:94px; background-color:#ccc; margin-bottom:80px;}
+section div.product{margin-bottom:120px; overflow:hidden;}
+section div.product li{width:25%; height:330px; margin-bottom:120px; float:left; }
+section div.product li dt{text-indent:-9999px; height:300px; background-repeat:no-repeat; background-position:top center; background-size:70%;}
+section div.product li dd{width:80% line-height:20px; font-size:12px; text-align:center; margin:0 auto;}
+
+section div.product li:nth-child(1) dt{background-image:url(../images/20210716095158717f81f8-be2e-4258-8a55-9eba072b1afb.jpg);}
+section div.product li:nth-child(2) dt{background-image:url(../images/2021050207483502ea4b70-9beb-46d3-9646-129a252e2e71.jpg);}
+section div.product li:nth-child(3) dt{background-image:url(../images/BO00105476_84795454.jpg);}
+section div.product li:nth-child(4) dt{background-image:url(../images/BO00105463_37591022.jpg);}
+section div.product li:nth-child(5) dt{background-image:url(../images/BO00105457_00612921.jpg);}
+section div.product li:nth-child(6) dt{background-image:url(../images/BO00105450_43028842.jpg);}
+section div.product li:nth-child(7) dt{background-image:url(../images/BO00076645_87994805.jpg);}
+section div.product li:nth-child(8) dt{background-image:url(../images/BO00081578_87351866.jpg);}
+section div.product li:nth-child(9) dt{background-image:url(../images/BO00081577_01433929.jpg);}
+section div.product li:nth-child(10) dt{background-image:url(../images/BO00081575_27793076.jpg);}
+section div.product li:nth-child(11) dt{background-image:url(../images/BO00081574_85293616.jpg);}
+section div.product li:nth-child(12) dt{background-image:url(../images/BO00081573_25537604.jpg);}
+section div.product li:nth-child(13) dt{background-image:url(../images/BO00081572_04114796.jpg);}
+section div.product li:nth-child(14) dt{background-image:url(../images/BO00081571_62774999.jpg);}
+section div.product li:nth-child(15) dt{background-image:url(../images/BO00081570_67133785.jpg);}
+section div.product li:nth-child(16) dt{background-image:url(../images/BO00081569_73814312.jpg);}
+section div.product li:nth-child(17) dt{background-image:url(../images/BO00078836_68566244.jpg);}
+section div.product li:nth-child(18) dt{background-image:url(../images/BO00076642_23957498.jpg);}
+section div.product li:nth-child(19) dt{background-image:url(../images/BO00076635_19012289.jpg);}
+section div.product li:nth-child(20) dt{background-image:url(../images/BO00076631_33267225.jpg);}
+
+
+section div.paging{width:396px; height:44px; margin:0 auto; background-color:orange; }
+
+/* 푸터영역 */
+div#footerArea{height:410px; background-color:#000;}
+div#footerArea footer{width:1300px; height:210px; margin:100px auto; }

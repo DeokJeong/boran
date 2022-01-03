@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'yg-jalnan';
+}
+
+.section {
+    width: 100%;
+    padding-bottom: 100px;
+}
+.section h1{
+    width: 100%;
+    text-align: center;
+    font-family: 'yg-jalnan';
+    padding-top: 170px;
+    padding-bottom:80px;
+    font-size: 50px;
+}
+.section h3 {
+    font-family: 'yg-jalnan';
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+.pihp_text {
+    width: 90%;
+    height: 396px;
+    border-radius: 20px;
+    background-color: #efefef;
+    padding: 30px;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+.inner_text {
+    width: 80%;
+    height: 336px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    box-sizing: border-box;   
+    font-family: 'SBAggroL';
+}
+.inner_text::-webkit-scrollbar{
+    width: 10px;    
+}
+.inner_text::-webkit-scrollbar-thumb{
+    background-color: #fe4701;
+    border-radius: 5px;
+}
+.inner_text::-webkit-scrollbar-track{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.pihp_text h5 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.pihp_text p {
+    font-size: 14px;
+}
+div.consent {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+div.consent li {
+    float: left;
+    font-family: 'yg-jalnan';
+}
+div.consent li:last-child {
+    margin-right: 0;
+}
+div.consent input {
+    width: 50px;
+    height: 17px;
+    float: left;
+}
+div.consent p {
+    margin-left: 5px;
+    width: 220px;
+    font-size: 18px;
+}
+
+.info p {
+    margin-top: 60px;
+    color:#fe4701;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+hr {
+    clear: both;
+    margin-left: 5%;
+    width: 90%;
+}
+
+div.pihp_input > ul > li {
+    height: 45px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#vigidata {
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+#username {
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+    padding: 7px 15px;
+}
+
+div.pihp_input > ul > li > span{
+    font-size: 25px;
+}
+
+div.pihp_input > ul > li > label{
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+}
+
+div.pihp_input > ul > li > input{
+    width: 90%;
+    height: 50px;
+    font-size: 14px;
+    padding: 7px 15px;
+}
+div.pihp_input{
+    display: flex;
+    box-sizing: border-box;
+    font-size: 18px;
+    align-items: flex-end;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 1000px;
+    margin: 0 auto;
+}
+.pihp_input > ul{
+    width: 100%;
+}
+div.pihp_input > ul > li.title > input{
+    width: 800px;
+}
+#ststore{ 
+    font-size: 14px;
+    padding: 7px 15px;
+}
+
+#userid {
+    width: 130px;
+    height: 50px;
+    font-size: 14px;
+    padding: 7px 15px;
+}
+
+#number1 {
+    width: 170px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 7px 15px;
+}
+
+#number2{
+    width: 170px;
+    height: 50px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 7px 15px;
+}
+
+#ststore {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+div.pihp_input > ul > li > label > span {
+    color: #fe4701;
+}
+div.pihp_input > ul > li.num > p {
+    margin-top : 15px;
+    color: #fe4701;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#useremail1 {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+#useremail2 {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+div.pihp_input > ul > li.email > p {
+    line-height: 50px;
+    margin : 0 5px 0 5px;
+}
+#useremail3 {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    padding: 7px 15px;
+    margin-left: 10px;
+}
+div.pihp_input > ul > li.file {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.file {
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    width: 1200px;
+}
+
+.filebox #upload-name {
+    display: inline-block;
+    height: 50px;
+    padding: 0 10px;
+    vertical-align: middle;
+    color: #999999;
+    font-size: 14px;
+    width: 300px;
+}
+.filebox {
+    margin-top:-10px;
+}
+
+.filebox label {
+    display: inline-block;
+    padding: 12px 15px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 10px;
+    margin-top:5px;
+    border-radius: 8px;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.file p {
+    width: 80%;
+    font-size: 14px;
+    margin-left: 170px;
+    color: #fe4701;
+}
+
+div.pihp_input > ul > li.TXT {
+    width: 100%;
+    height: 220px;
+}
+
+div.pihp_input > ul > li > input#usercontent {
+    width: 80%;
+    height: 200px;
+    font-size: 14px;
+    padding: 7px 15px;
+
+}
+
+.button {
+    display: flex;
+}
+
+.button button {
+    width: 120px;
+    height: 70px;
+    border: none;
+    background-color: #999999;
+    color: #000;
+    border-radius: 8px;
+    font-weight: bold;
+    margin:0 15px 0 15px;
+}
+
+.button button > a {
+    color: #000;
+}
+
+@media all and (max-width:560px){
+    div.pihp_input > ul > li.title > input{
+        width: 300px;
+    }
+    div.pihp_input > ul > li > label > span{
+        margin-right: 10px;
+    }
+
+    div.pihp_input > ul > li > label{
+        width: 100px;
+        font-size: 17px;
+        line-height: 50px;
+        margin-left: 25px;
+    }
+    div.pihp_input > ul > li > input#usercontent {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+        padding: 7px 15px;
+    
+    }
+    #userid{
+        width: 80px;
+    }
+
+    #number1 {
+        width: 94px;
+        height: 50px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 100;
+        padding: 7px 15px;
+    }
+    
+    #number2{
+        width: 94px;
+        height: 50px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 100;
+        padding: 7px 15px;
+    }
+    #useremail1{
+        width: 136px;
+    }
+    #useremail2{
+        width: 136px;
+    }
+
+    #useremail3{
+        display: none;
+    }
+    .filebox #upload-name {
+        width: auto;
+        margin-top:8px;
+    }
+    .filebox label{
+        font-size: 16px;
+        padding: 10px 15px;
+        height: 40px;
+    }
+    .file p{
+        margin-left:120px;
+        width:80%;
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    div.pihp_input > ul > li.num{
+        padding-bottom: 40px;
+    }
+    div.pihp_input > ul > li.num > p {
+        font-size: 12px;
+        width: 100%;
+        margin-top:-27px;
+        font-weight:bold;
+        margin-left:120px;
+    }
+    div.pihp_input > ul > li {
+        margin-left: 10px;
+    }
+
+    .info p {
+        font-size: 13px;
+    }
+
+    div.pihp_input{
+        width:auto;
+    }
+}

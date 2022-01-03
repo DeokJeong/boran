@@ -1,0 +1,31 @@
+@charset="UTF-8";
+
+
+/* header */
+
+/*ºñÁÖ¾ó*/
+article{width:100%; height: 223px; top:140px; position: relative; padding: 15px 0;}
+article div.articleArea{height:223px; background:url(../images/bg_visual_whats01.jpg) no-repeat top center; }
+article div.article{width:1168px; height: 223px;  margin: 0 auto;}
+article h3{widows: 400px; height:48px; font-size:48px; line-height: 248px; font-weight:bold; float:left; color:#fff; font-family: "SpeedeeK", "Malgun Gothic",'¸¼Àº °íµñ',"Dotum","µ¸¿ò","Arial"; font-size: 50px; letter-spacing: -3px; word-spacing: -5px;}
+article nav{position:absolute; top:210px; letter-spacing: 0px;  font-size: 15px; font-weight:bold; margin:5px; }
+article nav ul li{float:left; font-weight:bold; font-family: "SpeedeeK", "Malgun Gothic",'¸¼Àº °íµñ',"Dotum","µ¸¿ò","Arial",sans-serif; margin-left:0px; }
+article nav ul li a{float:left; color:#fff; margin-left: 15px;}
+
+
+/*ÄÁÅÙÃ÷*/
+section{width:100%; height: 7112px; position: relative; top:140px;}
+section div.section_Area{width:1168px; height: 1000px; margin: 0 auto; padding: 27px 0 70px 0; }
+section div.section_Area div.dt{ border-bottom: 5px solid #000; padding-bottom:5px;}
+section h2{width: 600px; height: 100px; font-size: 20px; line-height: 35px; letter-spacing: -2px; display: inline-block; margin-right: 356px; font-weight: 600;}
+section div.section_Area p{display: inline-block;  height: 30px; line-height: 30px; font-size: 24px; font-weight: 900; color:#808080; letter-spacing: -1px;}
+section div.section_Area p:nth-child(1){margin-left: 4px; width: 91px;}
+section div.section_Area p:nth-child(2)::before{display: inline-block; content: ''; width:1px; height: 18px; margin: -2px 17px 0 9px; background: #d1d1d1;}
+
+section div.img{height: 6758px; background: url(../images/1619074188174.jpg)no-repeat top center; top:50px;  border-bottom: 1px solid #000;  position: relative;  }
+section div.img > button.add{width: 360px; height: 85px; position: absolute; opacity: 0; left: 400px; top: 5500px; cursor:pointer; border-radius: 40px; border: none;}
+section div.img div.youtube{position: absolute; top:875px; left:150px;}
+section div.section_Area button.list{width:172px;height:70px; border-radius: 40px; border:none; font-weight: bold; font-size: 15px; background-color: #ffbc0d; margin-left: 14px; margin-top: 110px; cursor: pointer;}
+
+
+/* ÇªÅÍ¿µ¿ª */

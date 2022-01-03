@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신입 웹퍼블리셔 | 남보라</title>
+    <link rel="shortcut icon" href="./image/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="./image/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./image/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./image/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./image/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./image/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./image/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./image/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./image/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./image/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./image/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/icon/favicon-16x16.png">
+    <link rel="manifest" href="./image/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./image/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/promotion.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/popup.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+	  $(document).ready(function() {
+		emailjs.init("user_9dRi7pfoIXJRYNUH1Pi7F");		
+        //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
+        $('#contact-submit').click(function(e){       	 
+          e.preventDefault();
+          var templateParams = {	
+          //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
+                name: $('input[name=name]').val(),
+                company: $('input[name=company]').val(),
+                email : $('input[name=email]').val(),
+                phone: $('input[name=phone]').val(), 
+                message : $('textarea[name=message]').val()
+           				};
+                   console.log($('input[name=name]').val())
+                    
+                	
+         emailjs.send('service_mulxx7b', 'template_ygck56x', templateParams)
+         //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+         	    .then(function(response) {
+         	       console.log('SUCCESS!', response.status, response.text);
+                  alert('전송이 완료되었습니다.')
+                  location.reload();
+         	    }, function(error) {
+         	       console.log('FAILED...', error);
+                  alert('전송이 실패하였습니다.')
+         	    });
+         	       
+
+
+        });
+        
+	  });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./image/logo.png" alt="로고" style="width: 50px;">
+        </div>
+        <div class="wrapper">
+          <nav class="mobile-nav">
+            <a class="menu-trigger type7" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </nav>
+            <ul>
+                <li><a href="#mainpage">MAIN</a></li>
+                <li><a href="#about">PROFILE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#portfolio">CODING WEB</a></li>
+                <li><a href="#banner">SNSBANNER</a></li>
+                <li><a href="#promotion">PROMOTION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <dl class="side_nav">
+            <dt>MENU</dt>
+            <dd>
+                <ul>
+                    <li class="mainpage_nav"><a href="#mainpage">MAIN</a></li>
+                    <li class="about_nav"><a href="#about">PROFILE</a></li>
+                    <li class="skills_nav"><a href="#skills">SKILLS</a></li>
+                    <li class="portfolio_nav"><a href="#portfolio">CODING WEB</a></li>
+                    <li class="banner_nav"><a href="#banner">SNSBANNER</a></li>
+                    <li class="promotion_nav"><a href="#promotion">PROMOTION</a></li>
+                    <li class="contact_nav"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </header>
+    <section class="mainpage main_bg" id="mainpage">
+        <div class="container">
+            <div class="text"></div>
+        </div>
+        <ul id="nav_btn">
+          <li><a href="#about">PROFILE</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">CODING WEB</a></li>
+          <li><a href="#banner">SNSBANNER</a></li>
+          <li><a href="#promotion">PROMOTION</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul> 
+        <div class="section section--1">
+            <a class="mouse-scroll" href="#about">
+            <span class="mouse-scroll__mouse" aria-hidden="true">
+              <span class="mouse-scroll__mouse__wheel mouse-scroll__mouse__wheel--1"></span>
+              <span class="mouse-scroll__mouse__wheel mouse-scroll__mouse__wheel--2"></span>
+            </span>
+            <span class="mouse-scroll__label">Scroll for more</span>
+          </a>
+          </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="info_popup">
+            <img src="./image/inpographic.jpg" alt="인포그래픽">
+        </div>
+        <div class="wrap2">
+            <div class="profile_main">
+                <p>♥</p>
+                <h1> MY PROFILE</h1>
+                <img src="./image/pic.png" alt="증명사진" >
+            </div>
+            <div class="info">
+                <ul>
+                    <li class="profile">
+                        ABOUT ME<span>&nbsp;♥</span>
+                        <ul>
+                            <li>남보라</li>
+                            <li>1993.10.05</li>
+                            <li>경기도 동두천 거주</li>
+                            <li>sp10051993@hanmail.net</li>
+                        </ul>
+                    </li>
+                    <li class="license">
+                        LICENSE<span>&nbsp;♥</span>
+                        <ul>
+                            <li>GTQ 포토샵 1급</li>
+                            <li>웹디자인기능사</li>
+                        </ul>
+                    </li>
+                    <li class="history">
+                        HISTORY<span>&nbsp;♥</span>
+                        <ul>
+                            <li>2020.08.09 ~ 2021.01.25</li>
+                            <li>그린컴퓨터아카데미</li>
+                            <li>영상편집활용 웹디자인 웹퍼블리셔</li>
+                            <li>디지털 실무 양성과정 A</li>
+                        </ul>
+                    </li>
+                    <li class="resume">
+                        RESUME<span>&nbsp;♥</span>
+                        <button id="infographic" type="button">인포그래픽</button>
+                        <button type="button" onclick="location.href='#';">이력서</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="skills main_bg" id="skills">
+        <div class="wrap3">
+            <div class="skills_title">
+                <p>MY SKILLS<span>&nbsp;♥</span></p>
+            </div>
+            <div class="html_chart chart">
+                <div class="multi-graph margin">
+                    HTML
+                    <div class="graph" data-name="HTML" 
+                        style="--percentage : 90; --fill: #734b43 ;">
+                    </div>
+                </div>
+            <p> 콘텐츠 내용에 알맞은 시맨틱 태그를 <br>
+                사용하여 코드를 작성합니다.</p>
+            </div>
+
+            <div class="css_chart chart">
+                <div class="multi-graph margin">
+                    CSS
+                    <div class="graph" data-name="CSS" 
+                        style="--percentage : 90; --fill: #734b43 ;">
+                    </div>
+                </div>
+            <p> 웹 표준 및 웹 접근성을 준수하여 <br>반응형 레이아웃을 제작할 수 있습니다.</p>
+            </div>
+
+            <div class="css_chart chart">
+            <div class="multi-graph margin">
+                JavaScript
+                <div class="graph" data-name="jQuery" 
+                    style="--percentage : 60; --fill: #734b43 ;">
+                </div>
+            </div>
+            <p>
+                제이쿼리를 활용하여 다양한 애니메이션과<br> 기능을 구현할 수 있습니다.
+            </p>
+            </div>
+
+            <div class="ppt_chart chart">
+                <div class="multi-graph margin">
+                    OA
+                    <div class="graph" data-name="PPT" 
+                        style="--percentage : 70; --fill: #734b43 ;">
+                    </div>
+                </div>
+            <p>
+                간단한 테이블을 만들 수 있습니다.<br>
+                자료를 정리 할 수 있습니다.
+            </p>
+            </div>
+            
+            <div class="ai_chart chart">
+                <div class="multi-graph margin">
+                    Ai
+                    <div class="graph" data-name="Ai" 
+                        style="--percentage : 70; --fill: #403f2d ;">
+                    </div>
+                </div>
+            <p>
+                사진 보정 및 로고, 배너, 아이콘 등의<br> 디자인 작업을 할 수 있습니다.<br>
+            </p>
+            </div>
+
+            <div class="ps_chart chart">
+                <div class="multi-graph margin">
+                    Ps
+                    <div class="graph" data-name="Ps" 
+                        style="--percentage : 90; --fill: #403f2d ;">
+                    </div>
+                </div>
+            <p>
+                사진 보정 및 로고, 배너, 아이콘 등의<br> 디자인 작업을 할 수 있습니다.<br>
+            </p>
+            </div>
+
+            <div class="ae_chart chart">
+                <div class="multi-graph margin">
+                    Ae
+                    <div class="graph" data-name="Ae" 
+                        style="--percentage : 60; --fill: #403f2d ;">
+                    </div>
+                </div>
+            <p>
+                애프터이펙트를 활용한 간단한 모션그래픽<br> 작업을 할 수 있습니다.
+            </p>
+            </div>
+
+            <div class="pr_chart chart">
+                <div class="multi-graph margin">
+                    Pr
+                    <div class="graph" data-name="Pr" 
+                        style="--percentage : 70; --fill: #403f2d ;">
+                    </div>
+                </div>
+            <p>
+                프리미어를 활용한 컷편집, 자막 및<br> 자막효과를 사용 할 수 있습니다.
+            </p>
+            </div>
+
+        </div>
+    </section>
+    <section class="portfolio main_bg" id="portfolio">
+      <div class="wrap6">
+          <div class="portfolio_title">
+                  <p>CODING WEB<span>&nbsp;♥</span></p>
+          </div>
+          <div class="blog-slider">
+              <div class="blog-slider__wrp swiper-wrapper">
+                
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img src="./image/missha_img.png" alt="미샤">
+                  </div>
+                  <div class="blog-slider__content">
+                    <div class="blog-slider__title">01.MISSHA</div>
+                    <div class="blog-slider__text"><span>프로젝트 :</span>&nbsp;개인 프로젝트<br><br><span>기술 스택 :</span>&nbsp;PS/AI/HTML/CSS<br>
+                      <br><span>설명:</span>&nbsp;<br>교육과정 중 디자인과 코딩을 처음 접하고 제작했던 웹 사이트 입니다.  </div>
+                      <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.09.15~2021.09.17 ( 2일 )</div>
+                    <a href="./link/MISSHA/missha.html" target="_blank" class="blog-slider__button">사이트로 이동</a>
+                  </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img src="./image/montblanc_page.png" alt="몽블랑">
+                  </div>
+                  <div class="blog-slider__content">
+                      <div class="blog-slider__title">02.MONTBLANC</div>
+                      <div class="blog-slider__text"><span>프로젝트 :</span>&nbsp;조별 프로젝트<br><br><span>기술 스택 :</span>&nbsp;PS/HTML/CSS<br>
+                        <br><span>설명:</span>&nbsp;<br>처음 제작했던 사이트를 참고삼아 연습으로 제작했던 웹 사이트 입니다.<br>최대한 원래의 사이트를 구현하려고 하였습니다. </div>
+                        <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.09.17~2021.09.19 ( 2일 )</div>
+                      <a href="./link/Montblanc/index.html" target="_blank" class="blog-slider__button">사이트로 이동</a>
+                  </div>
+                </div>
+                
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img src="./image/mcdonald.png" alt="맥도날드">
+                  </div>
+                  <div class="blog-slider__content">
+                      <div class="blog-slider__title">03.MCdonalds</div>
+                      <div class="blog-slider__text"><span>프로젝트 :</span>&nbsp;조별 프로젝트<br><br><span>기술 스택 :</span>&nbsp;PS/AI/HTML/CSS<br>
+                        <br><span>설명:</span><br>그동안 이해한 HTML과 CCS를 사용하여 전체적인 웹 사이트를 제작했습니다.<br>메인페이지와 header,footer 부분을 담당했습니다.</div>
+                        <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.09.15~2021.09.17 ( 2일 )</div>
+                      <a href="./link/Mcdonald/index.html" target="_blank" class="blog-slider__button">사이트로 이동</a>
+                  </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img sliderImg">
+                    <img src="./image/Jardin.png" alt="쟈뎅">
+                  </div>
+                  <div class="blog-slider__content">
+                      <div class="blog-slider__title">04.JADIN</div>
+                      <div class="blog-slider__text"><span>프로젝트 :</span>&nbsp;개인 프로젝트<br><br><span>기술 스택 :</span>&nbsp;HTML/CSS/jQuery<br>
+                        <br><span>설명:</span><br>jQuery를 접하고 연습하기위해 제작한 웹 사이트 입니다. </div>
+                        <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.09.15~2021.09.17 ( 2일 )</div>
+                      <a href="./link/Jardin/index.html" target="_blank" class="blog-slider__button">사이트로 이동</a>
+                  </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img src="./image/Konaqueens.png" alt="코나퀸즈">
+                  </div>
+                  <div class="blog-slider__content">
+                      <div class="blog-slider__title">05.KonaQueens</div>
+                      <div class="blog-slider__text"><span>프로젝트 :</span>&nbsp;조별 프로젝트<br><br><span>기술 스택 :</span>&nbsp;PS/AI/HTML/CSS/jQuery<br>
+                        <br><span>설명:</span><br>그동안 배운것을 활용하여 기존의 사이트를 리뉴얼 제작한 반응형 사이트 입니다.  <br>
+                      CUSTOMER의 전체적인 부분과 STORE 의 jQuery부분을 담당했습니다.</div>
+                        <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.09.15~2021.09.17 ( 2일 )</div>
+                      <a href="./link/Konaqueens/main.html" target="_blank" class="blog-slider__button">사이트로 이동</a>
+                  </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+                  </div>
+                  <div class="blog-slider__content">
+                    <div class="blog-slider__title">06.제작중!</div>
+                    <div class="blog-slider__text"><span>프로젝트 :</span>&nbsp;개인 프로젝트<br><br><span>기술 스택 :</span>&nbsp;PS/AI/HTML/CSS/jQuery<br>
+                      <br><span>설명:</span>&nbsp;사이트는 정해졌으며 구상중입니다.  </div>
+                    <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2022.01.01~ ( 0일 )</div>
+                  <a href="#"  target="_blank" class="blog-slider__button">사이트로 이동</a>
+              </div>
+            </div>
+          </div>
+        <div class="blog-slider__pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="snsbanner main_bg" id="banner">
+      <div class="wrap5">
+          <div class="card-container banner_t">
+            <div class="banner_title">
+              <p><span>♥</span><br>SNS BANNER</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <img src="./image/tea.jpg" alt="아워티">
+            <span class="overlay bg-dark">
+              <div class="line overlay_text">
+                아워티
+                <div class="popupopen_tea overlay_sbtext">
+                  자세히보기
+                </div>
+              </div>
+            </span>
+          </div>
+          <div class="card-container">
+            <img src="./image/banner04.png" alt="sweet cake">
+            <span class="overlay bg-dark">
+              <div class="line overlay_text">
+                SWEET
+                <div class="popupopen_cake overlay_sbtext">
+                  자세히보기
+                </div>
+              </div>
+            </span>
+          </div>
+          <div class="card-container">
+            <img src="./image/banner02.png" alt="스탬프투어">
+            <span class="overlay bg-dark">
+              <span class="overlay bg-dark">
+                <div class="line overlay_text">
+                  스탬프 투어
+                  <div class="popupopen_stamp overlay_sbtext">
+                    자세히보기
+                  </div>
+                </div>
+              </span>
+            </span>
+          </div>
+          <div class="card-container">
+            <img src="./image/banner03.png" alt="블랙프라이데이">
+            <span class="overlay bg-dark">
+              <span class="overlay bg-dark">
+                <div class="line overlay_text">
+                  블랙프라이데이
+                  <div class="popupopen_blf overlay_sbtext">
+                    자세히보기
+                  </div>
+                </div>
+              </span>
+            </span>
+          </div>
+          <div class="card-container">
+            <img src="./image/banner01.png" alt="차박여행">
+            <span class="overlay bg-dark">
+              <span class="overlay bg-dark">
+                <div class="line overlay_text">
+                  차박여행
+                  <div class="popupopen_car overlay_sbtext">
+                    자세히보기
+                  </div>
+                </div>
+              </span>
+            </span>
+          </div>
+      </div>
+        <div class="tea_popup close_popup main_popup">
+          <div class="popup_img">
+            <img src="./image/tea.jpg" alt="아워티">
+          </div>
+          <div class="popup_text">
+            <h1>OURTEA</h1><br>
+            <p>색상 : <br>
+              <span style="background-color: #c7d9f0;">#c7d9f0</span>
+              <span style="background-color: #fac1c7;">#fac1c7</span>
+              <span style="background-color: #f5ba86;">#f5ba86</span>
+              <span style="background-color: #ff6c6c;">#ff6c6c</span>
+              <span style="background-color: #fe9b00;">#fe9b00</span>
+              <span style="background-color: #8d6e38;">#8d6e38</span>
+            </p><br>
+            <p>블렌딩 티의 <br>달콤함과 상큼함을<br> 강조한 배너</p>
+            <p>사용프로그램 : Photoshop / Illustrator</p><br>
+            <p>작업기간 : 3h</p><br>
+            <p>참고 : 창작</p><br>
+          </div>
+        </div>  
+        <div class="cake_popup close_popup main_popup">
+          <div class="popup_img">
+          <img src="./image/banner04.png" alt="cake">
+          </div>
+          <div class="popup_text">
+            <h1>SWEET CAKE</h1><br>
+            <p>색상 : <br>
+              <span style="background-color: #fef6eb;">#fef6eb</span>
+              <span style="background-color: #7d4b13;">#7d4b13</span>
+              <span style="background-color: #d6525d;">#d6525d</span>
+              <span style="background-color: #eec690;">#eec690</span>
+              <span style="background-color: #f8e797;">#f8e797</span>
+              <span style="background-color: #a7db7d;">#a7db7d</span>
+            </p><br>
+            <p>베이커리의<br>전통적인느낌과 달콤함을<br> 강조한 배너</p>
+            <p>사용프로그램 : Photoshop / Illustrator</p><br>
+            <p>작업기간 : 3h</p><br>
+            <p>참고 : 핀터레스트</p><br>
+          </div>
+        </div>
+        <div class="stamp_popup close_popup main_popup">
+          <div class="popup_img">
+            <img src="./image/banner02.png" alt="stamp">
+          </div>
+          <div class="popup_text">
+            <h1>스탬프투어</h1><br>
+            <p>색상 : <br>
+              <span style="background-color: #1a4f53;">#1a4f53</span>
+              <span style="background-color: #865500;">#865500</span>
+              <span style="background-color: #fe78a2;">#fe78a2</span>
+              <span style="background-color: #2240a0;">#2240a0</span>
+              <span style="background-color: #dfe090;">#dfe090</span>
+              <span style="background-color: #ee005f;">#ee005f</span>
+            </p><br>
+            <p>다양한 미션을<br>누구나 쉽게 참여할 수 있음을<br> 강조한 배너</p>
+            <p>사용프로그램 : Photoshop / Illustrator</p><br>
+            <p>작업기간 : 2h</p><br>
+            <p>참고 : 동두천시 블로그</p><br>
+          </div>
+        </div>   
+        <div class="blf_popup close_popup main_popup">
+          <div class="popup_img">
+            <img src="./image/banner03.png" alt="블랙프라이데이">
+          </div>
+          <div class="popup_text">
+            <h1>Black Friday</h1><br>
+            <p>색상 : <br>
+              <span style="background-color: #f9f9dc;">#f9f9dc</span>
+              <span style="background-color: #dfd7aa;">#dfd7aa</span>
+              <span style="background-color: #f7d6b8;">#f7d6b8</span>
+              <span style="background-color: #282828;">#282828</span>
+              <span style="background-color: #757575;">#757575</span>
+            </p><br>
+            <p>블랙프라이데이 기념<br>다양한 화장품의 판매를<br> 강조한 배너</p>
+            <p>사용프로그램 : Photoshop / Illustrator</p><br>
+            <p>작업기간 : 2h</p><br>
+            <p>참고 : 핀터레스트</p><br>
+          </div>
+        </div>
+        <div class="car_popup close_popup main_popup">
+          <div class="popup_img">
+            <img src="./image/banner01.png" alt="차박여행">
+          </div>
+          <div class="popup_text">
+            <h1>차박캠핑여행</h1><br>
+            <p>색상 : <br>
+              <span style="background-color: #aba8a7;">#aba8a7</span>
+              <span style="background-color: #070506;">#070506</span>
+            </p><br>
+            <p>산과 바다 어디서든<br>캠핑여행을 할 수 있다는점을<br> 강조한 배너</p>
+            <p>사용프로그램 : Photoshop / Illustrator</p><br>
+            <p>작업기간 : 2h</p><br>
+            <p>참고 : 핀터레스트</p><br>
+          </div>
+        </div>
+    </section>
+    <section class="promotion main_bg" id="promotion">
+      <div class="wrap4">
+          <div class="promotion_title">
+              <p>MY PROMOTION<span>&nbsp;♥</span></p>
+          </div>
+          <div class="promotion_list">
+              <ul class="btn_list">
+                  <li>
+                      <a href="#1p">
+                          첫번째 프로모션
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#2p">
+                          두번째 프로모션
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#3p">
+                          세번째 프로모션
+                      </a>
+                  </li>
+              </ul>
+              <div class="btn_img"><span> ⇽ 왼쪽 버튼을 클릭해주세요.</span>
+                  <div>
+                      <img src="./image/promotion01.png" alt="설맞이프로모션">
+                  </div>
+                  <div>
+                      <img src="./image/promotion02.png" alt="크리스마스프로모션">
+                  </div>
+                  <div>
+                      <img src="./image/promotion03.gif" alt="KT생일프로모션">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrap7">
+          <div class="container">  
+            <form id="contact_data" action="" method="post">
+              <div class="contact_title">
+                <p>CONTACT</p>
+              </div>
+              <p>이메일로 연락주시면 평일 기준 3일 내로 답장 드리겠습니다.</p>
+                <input placeholder="담당자명" name="name" type="text" tabindex="1" required>
+                <input placeholder="회사명" name="company" type="text" tabindex="1" required>
+                <input placeholder="이메일" name="email" type="email" tabindex="2" required>
+                <input placeholder="연락처" name="phone" type="tel" tabindex="3" required>
+                <textarea placeholder="원하는 내용을 남겨주시면 답장 드리겠습니다." name="message" tabindex="5" required></textarea>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              <p class="kakaotalk">좀 더 빠르게 연락을 원하실경우 <span>아래 문구를</span> 눌러주세요. <br>
+                <a href="" target="_blank" title="Open_kakao">오픈카카오톡</a>
+              </p>
+            </form>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+    </footer>
+</body>
+</html>

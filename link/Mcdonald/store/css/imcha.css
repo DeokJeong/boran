@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* reset */
+body, header,article,section,footer,div,nav,ul,li,h1,h2,h3,a,hr,dt,dd,span,table,tr,td,th,p{margin:0px; padding:0px;}
+.hidden{display:none;}
+ul,li{list-style: none;}
+a{text-decoration: none; color:#000;}
+table,tr,td,th{border-collapse:collapse;}
+
+/* header */
+header{width:100%; height:140px; position:fixed; z-index:1; background-color:white;}
+header div.titlearea{width:1168px; height:140px;  margin:0 auto; }
+header div.title{width: 100%; height:381px; background-color: white; border-top:1px solid #ccc; border-bottom:1px solid #f5bd43;}
+
+
+/* header_logo */
+header div h1{float: left; width: 106px; height:140px;  margin-top:28px; }
+
+/* header_main menu */
+header div.titlearea nav{float:left;  width:740px; height:140px; font-weight: bold; font-size: 20px; text-align: center;}
+header div.titlearea nav ul.menu1 > li{float:left; height: 140px; line-height: 138px;}
+header div.titlearea nav ul.menu1 > li:hover{border-bottom:3px solid #f5bd43;}
+header div.titlearea nav ul.menu1 > li:nth-child(1){width:100px; margin-left: 50px;}
+header div.titlearea nav ul.menu1 > li:nth-child(2){width:100px; margin-left: 60px;}
+header div.titlearea nav ul.menu1 > li:nth-child(3){width:130px; margin-left: 70px;}
+header div.titlearea nav ul.menu1 > li:nth-child(4){width:100px; margin-left: 70px;}
+
+/* header_right menu */
+header div.titlearea div.MCmenu2{float:right; width:316px; height:40px; margin-top:50px; font-family:"SpeedeeK", "Malgun Gothic", "¸¼Àº °íµñ", "Dotum", "µ¸¿ò", "Arial", sans-serif;  }
+header div.titlearea div.MCmenu2 a.mn1{float:left; width: 80px; height:36px; line-height: 36px; font-size: 13px; display: inline-block; text-align: center; border-radius: 45px; font-weight: bold; color:white; margin: 2px 2px auto;}
+header div.titlearea div.MCmenu2 a.mn1:nth-child(1){background:#db0007;  font-weight: 900;}
+header div.titlearea div.MCmenu2 a.mn1:nth-child(2){background:#ffbc0d;}
+header div.titlearea div.MCmenu2 a.mn1:nth-child(3){background:#264a36;}
+header div.titlearea div.MCmenu2 a.mn2{float:left; width: 50px; height:37px; background:url(../images/ico_search.png)no-repeat center right; margin-left: 14px; text-indent:-9999px;}
+
+/* header_sub menu */
+
+header nav ul.menu1 li a{display:block}
+header nav ul.menu1 li a + ul{display:none}
+header nav ul.menu1 li:hover + ul.mn0{display:block}
+header div.title{display:none;}
+
+
+header nav ul.mn0 li > a:hover{border-bottom:1px solid black; padding-bottom: 5px; color:#000; }
+header nav ul.mn0{margin-top:22px;  width: 100%; height: 700px;}
+header nav ul.mn0 li a{color:#80808f; font-weight: 900; }
+header nav ul.mn0 li{text-align: left; margin-left:25px; width: 150px; font-size:15px;  }
+header nav ul.mn0 li:nth-child(1){height:50px; line-height:50px; }
+header nav ul.mn0 li:nth-child(2){height:50px; line-height:40px; }
+header nav ul.mn0 li:nth-child(3){height:50px; line-height:35px; }
+header nav ul.mn0 li:nth-child(4){height:50px; line-height:30px; }
+header nav ul.mn0 li:nth-child(5){height:50px; line-height:25px; }
+header nav ul.mn0 li:nth-child(6){height:50px; line-height:20px; }
+header nav ul.mn0 li:nth-child(7){height:50px; line-height:15px; }
+
+
+/* ºñÁÖ¾ó¿µ¿ª */
+article{width:100%; height:250px; position: relative; top:140px;}
+article div.banner{height: 250px;  background:url(../images/drive/bg_visual_store01.jpg) no-repeat 50% 0%; background-position:top; }
+article div.banner div{width:1168px; height: 250px; margin: 0 auto; }
+article h3{width:100%; font-size:49px; font-weight:bold; float:left; color:#fff; margin-top:110px; letter-spacing: -2.5px;}
+article div ul{width:1200px; margin:0 auto;}
+article div ul li{display: inline-block; position:relative; top:40px; margin-right:5px; font-weight: 600; letter-spacing: -0.5px; }
+article div ul li a{color:#fff;}
+
+/* ÄÁÅÙÃ÷¿µ¿ª */
+section{width:1200px; margin:240px auto 0; overflow:hidden;}
+section h2{font-size:28px; margin:30px 0 30px; }
+section table{width:1200px; height:320px; border:none; border-top:2px solid #444444; border-bottom:1px solid #444444; margin:0 0 30px;}
+section table tr th{width:200px; font-family:"Malgun Gothic"; text-align:left; vertical-align:top; padding:35px 0 0 10px; border:none;}
+section table tr td{border:none;  border-left:1px solid #444444;}
+section table tr.line th{border-bottom:1px solid #909090;}
+section table tr.line td{border-bottom:1px solid #909090;}
+
+section table tr td ul{font-family:"Malgun Gothic"; line-height:28px; font-size:16px; font-weight:bold; margin-left:35px;}
+section table tr td ul li{color:#909090}
+section div.down{margin: 110px 475px 25px 475px; background:center;}
+section div.down > a{width:250px; height:90px; background-color:#ffbc0d; border-radius:50px; font-size:18px; font-weight:600; display:block; color:#292929; letter-spacing:-1.5px; text-align:center; line-height:90px; background-position:center;}
+section div.email{line-height:30px; font-weight:bold; text-align:center; margin:0 auto 110px;}
+section div.email p{color:#909090;}
+section div.email p b{color:#000;}
+
+/* footer_Area */
+div#footer_Area{width:100%; height:259px; background-color:#292929; color:#909090; position:absolute;}
+div#footer_Area footer{width:1168px; margin:0 auto; position:relative; top:20px;}
+
+/* footer left */
+div#footer_Area footer div.guide{font-weight:bold; font-family:"SpeedeeK", "Malgun Gothic", "¸¼Àº °íµñ", "Dotum", "µ¸¿ò", "Arial", sans-serif; line-height:28px; font-size:14px; letter-spacing:-1px; margin-right:0 auto; float:left; margin-top: 18px;}
+div#footer_Area footer div.guide ul li a.me{color:#fff000;}
+div#footer_Area footer div.guide ul li a{color:#fff;}
+
+/* footer center */
+div#footer_Area footer div.addressArea{float:left; line-height:28px; font-family:"SpeedeeK", "Malgun Gothic", "¸¼Àº °íµñ", "Dotum", "µ¸¿ò", "Arial", sans-serif; font-size:14px; letter-spacing:-1px; margin-left:80px; margin-top: 18px;}
+
+/* footer right */
+div#footer_Area footer div.social{height:234px; float:right;}
+div#footer_Area footer div.social ul{height:40px; margin-right: 40px; margin-top: 5px;}
+div#footer_Area footer div.social ul li{width:40px; height:40px; float:left; margin-right:20px; background-repeat:no-repeat;}
+div#footer_Area footer div.social ul li:nth-child(1){height:40px; margin-top:20px;}
+div#footer_Area footer div.social ul li:nth-child(2){height:40px; margin-top:20px;}
+div#footer_Area footer div.social ul li:nth-child(3){height:40px; margin-top:20px;}
+div#footer_Area footer div.social ul li:nth-child(4){height:40px; margin-top:20px;}
+div#footer_Area footer div.social ul li:last-child{float:right; margin-top:10px;}

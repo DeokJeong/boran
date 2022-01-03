@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+/* footer_Area */
+div#footer_Area{width:100%; height:259px; background-color:#292929; color:#909090; position:relative; top:140px;}
+div#footer_Area footer{width:1168px; margin:0 auto; position:relative; top:20px;}
+
+/* footer left */
+div#footer_Area footer div.guide{font-weight:bold; font-family:"SpeedeeK", "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Arial", sans-serif; line-height:28px; font-size:14px; letter-spacing:-1px; margin:0 auto; float:left; margin-top: 18px;}
+div#footer_Area footer div.guide ul li a.me{color:#fff000;}
+div#footer_Area footer div.guide ul li a{color:#fff;}
+
+/* footer center */
+div#footer_Area footer div.addressArea{float:left; line-height:28px; font-family:"SpeedeeK", "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Arial", sans-serif; font-size:14px; letter-spacing:-1px; margin-left:80px; margin-top: 18px;}
+
+/* footer right */
+div#footer_Area footer div.social{height:234px; float:right;}
+div#footer_Area footer div.social ul{height:40px; margin-right: 40px; margin-top: 5px;}
+div#footer_Area footer div.social ul li{width:40px; height:40px; float:left; margin-right:20px; background-repeat:no-repeat;}
+div#footer_Area footer div.social ul li:nth-child(1){height:40px; margin-top:20px;}
+div#footer_Area footer div.social ul li:nth-child(2){height:40px; margin-top:20px;}
+div#footer_Area footer div.social ul li:nth-child(3){height:40px; margin-top:20px;}
+div#footer_Area footer div.social ul li:nth-child(4){height:40px; margin-top:20px;}
+div#footer_Area footer div.social ul li:last-child{float:right; margin-top:10px;}

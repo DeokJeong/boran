@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-family:"맑은 고딕"}
+
+/*Header_Area*/
+
+
+/*Aarticle_Area*/
+div.Article_Area{position: relative; top:140px; }
+div.Article_Area article{height: 220px; width: 100%; background: url("../img/Competitiveness/bg_visual_story03.jpg")no-repeat top center; background-size: cover; }
+div.Article_Area div{width:1168px; height:220px; margin:0 auto;}
+div.Article_Area h2{width: 1168px; height: 50px; float: left; font-size: 50px; color: #fff; margin-top: 34px; font-weight: 500px;}
+div.Article_Area p{ display: inline-block; float: left; font-size: 18px; margin-top: 31px; color: #fff; line-height: 26px; width:1168px; font-weight: bold;}
+div.Article_Area li a{color: #fff;float: left; font-size:16px; display:inline-block; margin-left: 20px; margin-top: 23px; width:auto; font-weight: bold;}
+div.Article_Area ul li:nth-child(1) a{margin-left: 0px;}
+
+article div li:nth-child(2) a:before{ content: ""; display: inline-block; width: 6px; height: 6px; line-height: 15px;  border-radius: 6px; background-color: #F5BD43; float: left; margin-right: 20px; margin-top: 7px;}
+article div li:nth-child(3) a:before{ content: ""; display: inline-block; width: 6px; height: 6px; line-height: 15px;  border-radius: 6px; background-color: #F5BD43; float: left; margin-right: 20px; margin-top: 7px;}
+
+
+
+
+
+/*Section_Area*/
+div.Section_Area{position: relative; top:140px; width: 100%;  }
+
+/* 농장에서 레스토랑까지 / 궁금한 모든 것을 알려드립니다. (navi_1) */
+div.Section_Area div.navi_1_wrap{width: 1168px; margin: 0 auto;}
+div.Section_Area nav.navi_1{width: 570px; height: 20px; margin:0 auto; margin-top: 40px;}
+div.Section_Area nav.navi_1 li{float: left; font-size: 20px; margin-left: 84px; display:block; word-spacing: -3px; }
+div.Section_Area nav.navi_1 li a{color:#808080;  font-weight: bold;}
+div.Section_Area nav.navi_1 ul li:nth-child(1){margin-left: 0px; }
+div.Section_Area nav.navi_1 ul li:nth-child(2) a{ color: #db0007; border-bottom:1px solid; padding-bottom: 10px; font-weight: 600;}
+
+
+/* 검색 */
+div.Section_Area div.serch_wrap{margin-top: 80px; width: 100%; height:150px; background-color: #F8F8F8;}
+div.Section_Area div.serch{width: 1168px; height: 150px; margin:0 auto; padding-top:40px;}
+div.Section_Area div.serch button:nth-child(1){position: absolute; display: inline-block; width: 250px; height: 70px; border-radius: 70px; color:#808080; border: 1px solid #d1d1d1; background-color: #FFF;}
+div.Section_Area div.serch button:nth-child(1) span{position: relative; left:-70px; font-size:16px; font-weight: bold; text-align: left;}
+div.Section_Area div.serch button:nth-child(1) select{position:relative; lefr: -200px; display: inline-block;}
+div.Section_Area div.serch input{margin-left: 260px; display: inline-block; width: 640px; height: 70px; border-radius: 70px; color:#808080; border: 1px solid #d1d1d1; background-color: #FFF; padding:0 38px; font-size:16px; font-weight: bold;}
+div.Section_Area div.serch button:nth-child(3){display: inline-block; width: 170px; height:70px; border-radius: 70px; color:#292929; background-color: #FFbc0D; font-size:16px; font-weight:bold; border: 1px solid #FFbc0D; margin-left:5px;}
+
+/* select */
+div.Section_Area div.select{width:1168px; height: 80px; margin:0 auto; position: relative; margin-top: 100px;}
+div.Section_Area div.select li{display: inline-block; font-size:16px; line-height: 40px; font-weight: bold; word-spacing: -5px; height:40px; position: absolute; }
+div.Section_Area div.select ul li:nth-child(1){left:350px;}
+div.Section_Area div.select ul li:nth-child(2){left:500px;}
+div.Section_Area div.select ul li:nth-child(3){left:650px;}
+div.Section_Area div.select ul li:nth-child(4){left:800px;}
+div.Section_Area div.select li:nth-child(1):before{position: absolute; left:-55px; content: ""; display: inline-block;; width:40px; height:40px; background: url("../img/Competitiveness/bg_form.png"); background-position: -40px -44px; margin-right: 10px; }
+div.Section_Area div.select li:nth-child(2):before{position: absolute; left:-55px; content: ""; display: inline-block;; width:40px; height:40px; background: url("../img/Competitiveness/bg_form.png"); background-position: -0px -44px; }
+div.Section_Area div.select li:nth-child(3):before{position: absolute; left:-55px; content: ""; display: inline-block;; width:40px; height:40px; background: url("../img/Competitiveness/bg_form.png"); background-position: -0px -44px; }
+div.Section_Area div.select li:nth-child(4):before{position: absolute; left:-55px; content: ""; display: inline-block;; width:40px; height:40px; background: url("../img/Competitiveness/bg_form.png"); background-position: -0px -44px; }
+
+/* table */
+div.Section_Area div.table{width: 1168px; margin:0 auto; margin-bottom: 30px; font-size: 16px; font-weight: bold; }
+div.Section_Area div.table table tr{width:1168px; height: auto; border-bottom:1px solid #808080;}
+div.Section_Area div.table table tr:first-child{width:1168px; border-top:2px solid #808080;}
+div.Section_Area div.table table tr:last-child{width:1168px; border-bottom:2px solid #808080;}
+div.Section_Area div.table table th{display: inline-block; height: 80px; width:150px; line-height: 80px;}
+div.Section_Area div.table table td:nth-child(2){display: inline-block; height: 80px; width:1018px;line-height: 80px;}
+div.Section_Area div.table table td:nth-child(3){display: block; height: auto; width: 1168px; background-color: #F8F8F8;  line-height: 1.9; padding:30px 140px;}
+div.Section_Area div.table table td:nth-child(3){display: inline-block; width: 888px;  height:auto; color:#808080;}
+

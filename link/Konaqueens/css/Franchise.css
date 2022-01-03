@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.FC{
+    width: 100%;
+}
+.fc_con{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 11%;
+}
+.fc_h2{
+    font-family: 'yg-jalnan';
+    margin: 0 auto;
+}
+.fc_h2 h2{
+    text-align: center;
+    font-size: 48px;
+}
+.list{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.list ul li{
+    width: 175px;
+    height: 175px;
+    background: #efefef;
+    border-radius: 50%;
+    position: relative;
+}
+.list ul li.on{
+    background: #ff6326;
+}
+.list ul li img{
+    position: absolute;
+    top:1.5vw;
+    left:1.5vw;
+}
+
+.FCtxt{
+    width: 70%;
+    background: #fff;
+    margin: 0 auto;
+}
+.FCtxt img{
+    width: 469px;
+    height: 530px;
+}
+.infoTxT{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.FCtxt p{
+    font-family: 'yg-jalnan';
+    font-size: 2vw;
+    color:#ff6326;
+
+}
+.FCtxt span{
+    font-family: 'SBAggroL';
+    font-size: 1vw;
+    color:#000;
+    line-height:2vw;
+}
+.FCtxt > div{
+    width: 100%;
+    height: auto;
+    background: #ffd2ad;
+    margin-bottom: 10px;
+}
+.fcText1 > div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+}
+.FCtxt > div {
+    display: none;
+}
+.fcText2 > div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+
+}
+.fcText3 > div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+
+}
+.fcText4 > div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+@media all and (max-width:764px) {
+    .list{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .fc_con{
+        width: 90%;
+    }
+    .fc_h2 h2{
+        font-size: 39px;
+        margin-bottom: 30px;
+    }
+    .list ul li{
+        width: 87px;
+        height:87px;
+        background: #efefef;
+        border-radius: 50%;
+    }
+    .list ul li img{
+        width: 75px;
+        height: 75px;
+
+    }
+    .FCtxt{
+        width: 90%;
+        background: #fff;
+        margin: 0 auto;
+    }
+    .fcText1 > div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .img1 img{
+        padding-top: 40px;
+        width: 330px;
+        height: 390px;
+    }
+    .fcText2 > div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .img2 img{
+        padding-top: 40px;
+        width: 330px;
+        height: 390px;
+    }
+    .fcText3 > div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .img3 img{
+        padding-top: 40px;
+        width: 330px;
+        height: 390px;
+    }
+    .fcText4 > div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .img4 img{
+        padding-top: 40px;
+        width: 330px;
+        height: 390px;
+    }
+    .FCtxt p{
+        font-size: 2em;
+
+    }
+    .FCtxt span{
+        font-size: 1.2em;
+        line-height:2;
+    }
+}

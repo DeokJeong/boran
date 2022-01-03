@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* atricle */
+article{width:100%; height:220px; position:relative; top:140px;}
+article div.bg{height:220px; background:url(../images/bg_banner/bg_visual_menu01.jpg) no-repeat top center; }
+article div.bg1{width:1168px; height:200px; position:relative; color:#292929; margin: 0 auto; padding:10px 0;}
+
+/*버거 & 문단*/
+article h3{height:80px; line-height:80px; font-size:47px;}
+article p{height:60px; line-height:30px; font-size:17px; font-weight:bold; margin-bottom:10px; margin-top:10px;}
+
+/*홈 메뉴 버거*/
+article ul li{height:15px; font-size:15px; line-height:15px; float:left; text-align:center; margin-top:10px; font-weight:bold;}
+article ul li:nth-child(1){text-align:left; width:65px;}
+article ul li:nth-child(2){padding-right:5px; width:75px;}
+article ul li:nth-child(3){width:45px;}
+article ul li span{display:block; background:url(../images/drive/orange.png) no-repeat right center; }
+
+/* section 기본틀 */
+section{width:100%; position:relative; top:140px;}
+section div.inner{width:1168px; height:1280px; margin:0 auto;}
+
+/*섹션 메인탑*/
+section div.inner div.maintop{width:1168px; height:614px; margin-top:35px;}
+section div.inner div.maintop div.maintop_name{width:380px; height:73px; text-align:center; margin-left:390px;}
+section div.inner div.maintop div.maintop_name h3.ko{height:34px; font-size:33px; line-height:34px; letter-spacing:-1.5px;}
+section div.inner div.maintop div.maintop_name small.en{line-height:19px; height:19px; font-size:20px; position:relative; top:20px; color:#808080;}
+
+section div.inner div.maintop div.info{width:1168px; height:560px;}
+
+/*햄버거들*/
+section div.inner div.maintop div.info div.info_img{width:1168px; height:370px;}
+section div.inner div.maintop div.info div.info_img li{float:left; position:relative;}
+section div.inner div.maintop div.info div.info_img li:nth-child(2){width:50%; height:370px; background:url(../images/photo/1/12.png) no-repeat; background-size:cover; text-indent:-9999px; margin-left:180px;}
+section div.inner div.maintop div.info div.info_img:before{content:""; display:block; width:300px; height:300px; border-radius:100%; background:#f5f5f5; position:absolute; left:710px; top:98px;}
+/*햄버거 옆에 화살표*/
+section div.inner div.maintop div.info div.info_img li:nth-child(1){width:110px; height:110px; background:#ffbc0d; border-radius:110px; position:relative; top:195px;}
+section div.inner div.maintop div.info div.info_img li:nth-child(3){width:110px; height:110px; background:#ffbc0d; border-radius:110px; float:right; position:relative; top:195px;}
+section div.inner div.maintop div.info div.info_img li a{display:block; width:110px; height:110px; border-radius:110px;}
+section div.inner div.maintop div.info div.info_img li:nth-child(1) span{display:block; width:25px; height:34px; background:url(../images/photo/1/bg_arrow.png) no-repeat; text-indent:-9999px; position:absolute; top:35px; left:40px; }
+section div.inner div.maintop div.info div.info_img li:nth-child(3) span{display:block; width:25px; height:34px; background:url(../images/photo/1/bg_arrow.png) no-repeat; text-indent:-9999px; position:absolute; top:35px; left:48px; background-position:0 100%;}	
+/*햄버거 화살표 호버*/
+section div.inner div.maintop div.info div.info_img li:nth-child(1) div.img{width:280px; height:110px; overflow:hidden; background:#ffbc0d; position:relative; border-radius:110px; display:none;}
+section div.inner div.maintop div.info div.info_img li:nth-child(1) div.img img{width:90px; height:90px; overflow:hidden; position:relative; top:10px; left:10px;}
+section div.inner div.maintop div.info div.info_img li:nth-child(1) div.img strong{width:140px; height:50px; position:absolute; font-size:16px; line-height:25px; letter-spacing:-1px; top:30px; right:25px;}
+section div.inner div.maintop div.info div.info_img li:nth-child(1):hover div.img{display:block;}
+
+section div.inner div.maintop div.info div.info_img li:nth-child(3) div.img{width:280px; height:110px; overflow:hidden; background:#ffbc0d; position:relative; border-radius:110px; float:right; display:none;}
+section div.inner div.maintop div.info div.info_img li:nth-child(3) div.img img{width:90px; height:90px; overflow:hidden; position:relative; top:10px; left:180px;}
+section div.inner div.maintop div.info div.info_img li:nth-child(3) div.img strong{width:140px; height:50px; position:absolute; font-size:16px; line-height:50px; letter-spacing:-1px; top:30px; left:50px; }
+section div.inner div.maintop div.info div.info_img li:nth-child(3) div.img2{width:106px; height:22px; overflow:hidden; position:relative; right:40px; display:none;}
+section div.inner div.maintop div.info div.info_img li:nth-child(3):hover div.img{display:block;}
+section div.inner div.maintop div.info div.info_img li:nth-child(3):hover div.img2{display:block;}
+
+
+/*햄버거 밑에 설명*/
+section div.inner div.maintop div.info div.info_p{width:1168px; height:106px; text-align:center; color:#808080; font-size:15px; font-weight:bold; line-height:25px; position:relative; top:10px; letter-spacing:-0.5px;}
+section div.inner div.maintop div.info div.info_p span{display:block; position:relative; top:10px;}
+
+
+/*섹션 메인봇*/
+section div.inner div.mainbot{width:1068px; height:640px; margin:0 auto; position:relative; top:20px;}
+section div.inner div.mainbot div.mainbot1{width:1068px; height:330px;}
+section div.inner div.mainbot div.mainbot1 h4.title{height:20px; font-size:19px; line-height:20px;}
+section div.inner div.mainbot div.mainbot1 h4.title a{display:block; width:30px; height:15px; background:url(../images/photo/1/btn_toggle.png) no-repeat; float:right; background-size:100%; background-position:0 100%; text-indent:-9999px; margin-top:5px;} 
+
+
+/*섹션 메인봇 테이블*/
+section div.inner div.mainbot div.mainbot1 table{border-top:1px solid #292929; border-bottom:1px solid #292929; box-sizing:border-box; border-collapse:collapse; margin-top:30px; font-weight:bold;}
+section div.inner div.mainbot div.mainbot1 table thead{width:1068px; height:83px; text-align:center;}
+section div.inner div.mainbot div.mainbot1 table tbody{width:1068px; height:162px; text-align:center;}
+section div.inner div.mainbot div.mainbot1 table th{width:115px; padding:25px 12px; font-size:15px;}
+section div.inner div.mainbot div.mainbot1 table td{width:115px; color:#808080; border-top:1px solid #808080; font-size:15px;}
+section div.inner div.mainbot div.mainbot1 table th.t1{width:140px; text-align:left; border-right:1px solid #292929; border-top:1px solid #808080; padding-right:40px;}
+
+/*섹션 메인봇 문단 */
+section div.inner div.mainbot div.mainbot2{width:1068px; height:180px; margin-top:65px;}
+section div.inner div.mainbot div.mainbot2 h4.title{height:20px; font-size:19px; line-height:20px; margin-bottom:25px;}
+section div.inner div.mainbot div.mainbot2 h4.title a{display:block; width:30px; height:15px; background:url(../images/photo/1/btn_toggle.png) no-repeat; float:right; background-size:100%; background-position:0 100%; text-indent:-9999px; margin-top:5px;} background-size:100%; background-position:0 100%; margin-top:5px;}
+section div.inner div.mainbot div.mainbot2 h4.title hr{display:block;}
+section div.inner div.mainbot div.mainbot2 div.bo{width:1068px; height:60px; font-size:16px; font-weight:bold; letter-spacing:-1.3px; line-height:30px; position:relative; top:15px;}
+section div.inner div.mainbot div.mainbot2 div.bo span{display:inline-block; color:#808080;}
+
+
+/*픽스드*/
+div.fix1{width:110px; height:181px; position:fixed; bottom:25px; right:225px;}
+div.fix1 a{display:block; width:110px; height:113px; float:left;}
+div.fix1 a:nth-child(2){width:43px; height:26px;}
+div.fix1 a:nth-child(1) img{width:110px; height:113px; background-size:cover; background-repeat:no-repeat;}
+div.fix1 a:nth-child(2) img{width:43px; height:26px; background-size:cover; background-repeat:no-repeat; margin-top:38px; margin-left:20px;}

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.EVT{
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+.evt{
+    width: 65%;
+    margin: 0 auto;
+}
+.evt h2{
+    font-family: 'yg-jalnan';
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.EvT{
+    width: 100%;
+    font-family: 'yg-jalnan';
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    position: relative;
+}
+.EvT > div{
+    width: 90%;
+    margin: 0 auto;
+}
+.EvT img{
+    width: 100%;
+}
+.EvT p{
+    font-size: 27px;
+    margin-left: 5%;
+}
+.EvT span{
+    margin-right: 5%;
+}
+hr{
+    margin: 0 auto; 
+    padding: 0; 
+    color:#acacac; 
+    height: 1px; 
+    width: 90%;
+    
+}
+.end{
+    width: 90% !important;
+    height: 244px;
+    background-color:rgba(216, 216, 216, 0.658); 
+    position: absolute; 
+    left: 5%;
+}
+.end span{
+    width: 100%; 
+    height:20px; 
+    line-height: 20px; 
+    display: block; 
+    color: #292929; 
+    font-size: 18px; 
+    text-align: center; 
+    font-weight:bold; 
+    padding-top: 120px;
+}
+@media all and (max-width:720px) {
+    .evt{
+        width: 100%;
+    }
+    .evt h2{
+        margin-bottom: 5px;
+    }
+    .EVT{
+        padding-top:70px;
+    }
+    .EvT{
+        position: relative;
+    }
+    .EvT > div{
+        width: 90%;
+    }
+    .EvT span{
+        display: none;
+    }
+    .EvT p{
+        margin: 0 auto;
+    }
+    .end{
+        width: 100%;
+        height: 95px;
+        background-color:rgba(216, 216, 216, 0.658); 
+        position: absolute;
+    }
+    .end span{
+        width: 100%; 
+        height:20px; 
+        line-height: 20px; 
+        display: block; 
+        color: #292929; 
+        font-size: 12px; 
+        text-align: center; 
+        font-weight:bold; 
+        padding-top: 40px;
+    }
+}

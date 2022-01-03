@@ -1,0 +1,506 @@
+@charset "UTF-8";
+
+.snsbanner {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  min-height: 959px;
+}
+
+.wrap5 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 80%;
+  height: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+
+.banner_title {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  font-family: 'GmarketSansLight';
+  font-size: 4vw;
+  color: #000;
+  top: 8%;
+}
+
+.banner_title p span {
+color: #734b43;
+font-size: 5vw;
+font-family: '777Balsamtint';
+}
+
+.card-container {
+width: 30.5%;
+height: 45.5%;
+margin: auto;
+text-align: center;
+position: relative;
+border : 15px solid #f2c1bd;
+box-sizing: border-box;
+overflow: hidden;
+border-radius: 50px;
+}
+
+.banner_t {
+border:none;
+}
+
+.card-container img {
+width: 100%;
+height: 100%;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+background-color: #000;
+transition: 0.1s ease-in;
+
+}
+
+.line {
+width: 85%;
+height: 70%;
+border : 5px solid #ffffff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 40px;
+}
+
+.overlay_text {
+font-size: 2.7vw;
+color: #ffffff;
+font-family: 'GmarketSansLight';
+padding-top: 15%;
+}
+
+.overlay_sbtext {
+font-size: 2vw;
+width: 70%;
+padding: 13px 0 10px 0;
+margin: 20% auto;
+text-align: center;
+background-color: #fff;
+font-family: 'GmarketSansBold';
+color: #000;
+cursor: pointer;
+border-radius: 10px;
+box-sizing: border-box;
+}
+
+.card-container:hover .overlay{
+opacity: 0.7;
+}
+
+.card-container:hover .line{
+opacity: 1;
+}
+
+
+/* popup */
+.car_popup,
+.blf_popup,
+.stamp_popup,
+.tea_popup,
+.cake_popup {
+  display: none;
+  position: relative;
+  width: 70%;
+  height: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 8px solid #f2c1bd;
+  z-index: 9999;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.overlay_sbtext{
+  font-size: 2vw;
+}
+
+#popup_bg {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  left: 0;
+  top: 0;
+}
+
+.popup_img{
+  position: absolute;
+  box-sizing: border-box;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top:10%;
+  
+}
+.popup_img img{
+height: 100%;
+}
+
+.popup_text {
+  left: 50%;
+  position: absolute;
+  padding: 3%;
+  box-sizing: border-box;
+}
+
+.popup_text h1 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  font-family: 'GmarketSansBold';
+  letter-spacing: 0.5px;
+}
+
+.popup_text p {
+  font-family: 'GmarketSansLight';
+  font-size: 1.3vw;
+  font-weight: bold;
+  width: 100%;
+}
+
+.popup_text p:nth-child(5){
+  font-size: 1.8vw;
+  line-height: 2.9vw;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.popup_text p span {
+  font-family: 'GmarketSansLight';
+  font-size: 0.8vw;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.popup_text p span:hover {
+  color: #000;
+  font-size: 0.8vw;
+}
+
+/* 데스크탑 */
+@media screen and (max-width:1799px) {
+  .snsbanner{
+      width: 100vw;
+      height: 1000px;
+      min-height: 959px;
+  }   
+  .card-container {
+    width: 30%;
+    margin: 0;
+    height: 400px;
+    margin-left: 3%;
+  }
+  .line {
+    font-size: 3vw;
+  }
+
+}
+
+@media screen and (max-width:1320px) {
+  .snsbanner{
+      width: 100vw;
+      height: 1600px;
+      min-height: 959px;
+  }   
+  .card-container {
+    width: 47%;
+    margin: 0;
+    height: 450px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+  .line {
+    font-size: 4vw;
+}
+  .popup_img{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 2%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .overlay_sbtext {
+    font-size: 3vw;
+    width: 70%;
+    margin: 20% auto;
+    text-align: center;
+    background-color: #fff;
+    font-family: 'GmarketSansBold';
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+  .car_popup,
+  .blf_popup,
+  .stamp_popup,
+  .tea_popup,
+  .cake_popup {
+    display: none;
+    position: relative;
+    width: 80%;
+    height: 35%;
+  }
+}
+
+/* 타블렛 가로 */
+@media screen and (max-width:1199px) {
+  .snsbanner{
+      width: 100vw;
+      height: 1400px;
+      min-height: 959px;
+  }   
+  .card-container {
+    width: 47%;
+    margin: 0;
+    height: 430px;
+    margin-left: 3%;
+  }
+  .popup_text {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .snsbanner{
+      width: 100vw;
+      height: 1400px;
+      min-height: 959px;
+  } 
+  .card-container {
+    width: 47%;
+    margin: 0;
+    height: 350px;
+    margin-left: 3%;
+  }
+
+}
+
+@media screen and (max-width:899px) {
+  .snsbanner{
+      width: 100vw;
+      height: 1400px;
+      min-height: 959px;
+  } 
+  .card-container {
+    width: 45%;
+    margin: 0;
+    height: 330px;
+    margin-left: 3%;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .snsbanner{
+      width: 100vw;
+      height: 4000px;
+      min-height: 959px;
+  } 
+  .card-container {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+    height: 600px;
+  }
+
+  .banner_t {
+    width: 100%;
+    height: 200px;
+  }
+  .banner_t {
+    width: 100%;
+    height: 200px;
+  }
+  .banner_title p {
+    font-size: 7vw;
+  }
+  .banner_title p span{
+    font-size: 7vw;
+  }
+  .line {
+    font-size: 8vw;
+  }
+  .overlay_sbtext {
+    font-size: 7vw;
+  }
+  .popup_text p span {
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+    font-size: 2vw;
+  }
+  .popup_text {
+    width: 100%;
+    left: 0;
+    text-align: left;
+  }
+
+  .popup_text h1 {
+    font-size: 8vw;
+  }
+
+  .popup_text p {
+    font-size: 2.7vw;
+  }
+  .popup_text p:nth-child(5){
+    font-size: 3.5vw;
+    line-height: 5vw;
+    width: 100%;
+    margin: 10px 0 30px 0;
+  }
+  .car_popup{
+    display: none;
+    position: relative;
+    width: 80%;
+    height: 15%;
+    left: 50%;
+    top: 94%;
+    transform: translate(-50%, -94%);
+  }
+  .blf_popup{
+    display: none;
+    position: relative;
+    width: 80%;
+    height: 15%;
+    left: 50%;
+    top: 74%;
+    transform: translate(-50%, -74%);
+  }
+  .stamp_popup{
+    display: none;
+    position: relative;
+    width: 80%;
+    height: 15%;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -53%);
+  }
+  .tea_popup{
+    display: none;
+    position: relative;
+    width: 80%;
+    height: 15%;
+    left: 50%;
+    top:12%;
+    transform: translate(-50%, -12%);
+  }
+  .cake_popup {
+    display: none;
+    position: relative;
+    width: 80%;
+    height: 15%;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -33%);
+  }
+  .popup_img{
+    display: none;
+  }
+
+}
+
+/* 모바일 세로 */
+@media screen and (max-width:599px) {
+  .snsbanner{
+      width: 100vw;
+      height: 2700px;
+      min-height: 959px;
+  } 
+  .wrap5 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start
+  }
+  .card-container {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+    height: 400px;
+  }
+
+  .banner_t {
+    width: 100%;
+    height: 200px;
+  }
+  .banner_title p {
+    font-size: 10vw;
+  }
+  .banner_title p span{
+    font-size: 10vw;
+  }
+  .line {
+    font-size: 8vw;
+  }
+  .overlay_sbtext {
+    font-size: 7vw;
+  }
+  .car_popup{
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -90%);
+  }
+  .blf_popup{
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+  }
+  .stamp_popup{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .tea_popup{
+    left: 50%;
+    top:14%;
+    transform: translate(-50%, -14%);
+  }
+  .cake_popup {
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -33%);
+  }
+  .popup_text {
+    padding: 3%;
+  }
+}

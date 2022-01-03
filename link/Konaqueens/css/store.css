@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'yg-jalnan';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); 
+     font-weight: normal; 
+     font-style: normal;}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+     font-style: normal;}
+
+
+/* reset */
+
+/*아티클,,,*/
+article{
+    width: 1170px; 
+    height: 570px;
+    position: relative; 
+    background-color: #fff;
+    padding-top: 170px;
+    margin:0 auto;
+}
+article h3{
+    width: 100%;
+    font-family: 'yg-jalnan';
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+article h2{
+    font-family: 'yg-jalnan';
+    font-weight: normal;
+    font-style: normal;   
+    font-size: 30px; 
+    height: 105px;
+    box-sizing: border-box;
+
+    line-height: 105px;
+    text-align: left;
+    left: 40%;
+    position: absolute;
+}
+article > div.store {
+    width: 100%;
+    border: 3px solid #000;
+    text-align: center;
+    margin: 0 auto;
+    height: 300px;
+
+}
+
+#addressDo1{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: #222;
+    border: 2px solid #ccc;
+    font-size: 15px;
+    left: 50%;
+    top:58%;
+    margin-left: -165px;
+    position: absolute;
+}
+article > div > #addressSiGunGu1{
+    width: 165px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: #222;
+    border: 2px solid #ccc;
+    font-size: 15px;
+    left: 50%;
+    top:58%;
+    margin-left: 0;
+    position: absolute;
+}
+#d_address{
+    width: 330px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: #222;
+    border: 2px solid #ccc;
+    left: 50%;
+    top:68%;
+    position: absolute;
+    margin-left: -165px;
+}
+.store > button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #999;
+    font-size: 20px;
+    font-weight: bold;
+    left: 50%;
+    margin-left: -75px;
+    top:78%;
+    position: absolute;
+    border:none;
+}
+
+
+/*세에에엑셔어언,,*/
+section{
+    width: 100%; 
+    height: 1000px; 
+    background-color:#fff; 
+    display: flex;
+}
+table{
+    width: 100%; 
+    height: 1000px;
+    margin-bottom: 1000px;
+    
+}
+table td{
+    font-size: 17px; 
+    text-align: center; 
+    color: #161616;
+    vertical-align: middle;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    vertical-align: middle !important;
+}
+table td a{
+    color:#161616; 
+    text-decoration: none;
+    
+}
+table td a:hover,table td a:visited, table td a:link{
+    color:#161616; 
+    text-decoration: none;
+}
+table th{
+    text-align: center; 
+    font-size: 18px; 
+    background: #161616; 
+    color:#fff;
+    
+}
+
+@media all and (max-width: 992px){
+    article{
+        width: 90%; 
+        height: 570px;
+        position: relative; 
+        background-color: #fff;
+        padding-top: 170px;
+        margin:0 auto;
+    }
+    article h2{
+        font-family: 'yg-jalnan';
+        font-weight: normal;
+        font-style: normal;   
+        font-size: 25px; 
+        height: 105px;
+        box-sizing: border-box;
+
+        line-height: 105px;
+        text-align: left;
+        left: 33%;
+        position: absolute;
+    }
+    
+}
+@media all and (max-width: 768px){
+    article{
+        width: 80%; 
+        height: 570px;
+        position: relative; 
+        background-color: #fff;
+        padding-top: 170px;
+        margin:0 auto;
+    }
+}
+@media all and (max-width: 360px){
+    article{
+        width: 100%; 
+        height: 570px;
+        position: relative; 
+        background-color: #fff;
+        padding-top: 170px;
+        margin:0 auto;
+    }
+
+}

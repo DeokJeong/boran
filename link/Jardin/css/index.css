@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* reset */
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,address,strong,tt,var,b,u,dl,dt,dd,ol,ul,li,tr,th,td,article,footer,header,menu,nav,section{margin:0px;padding:0px;}
+
+.hidden{display: none;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+
+/* header */
+header{width: 100%; position: fixed; z-index: 999; transition: 0.3s all;}
+header.active{background: black;}
+
+/* logo */
+.logoArea{position: relative; height: 100px;}
+.logo img{position: absolute; left:50%; margin-left: -93px; top:7px;}
+
+/* subBackground */
+div.subBackground{position: absolute; top: 130px; left: 0; width: 100%; height:0; background: rgba(255, 255, 255, 0.8); overflow: hidden; opacity:0; transition: 0.6s all;}
+
+header > div.active{opacity: 1; height: 220px;}
+
+/* menu */
+nav.wrapper{position:relative; height: 20px;}
+nav.wrapper ul > li{display: inline-block; position: absolute;}
+nav.wrapper ul > li:nth-child(1){left:18%; margin-bottom: 5px;}
+nav.wrapper ul > li:nth-child(2){left:40%; }
+nav.wrapper ul > li:nth-child(3){left:59%; }
+nav.wrapper ul > li:nth-child(4){left:75%; }
+nav.wrapper ul > li a{color: #fff; letter-spacing: 2px;}
+
+nav.wrapper div.submenu > li > a { display:block; width:100%; height:50px; }
+
+nav.wrapper .on div.submenu {display:block; }
+
+/* submenu */
+div.submenu{width: 100%; height: 210px; display: none;  overflow:hidden;}
+div.submenu ul:after {content:""; display:block; clear:both;}
+div.submenu ul > li{ width:200px;  vertical-align:baseline; box-sizing: border-box;}
+div.submenu ul li a {color:gray }
+div.submenu ul li.on a {color:orange }
+div.submenu ul li.on {color: black}
+div.submenu ul > li:nth-child(1){margin-top: 30px; left:0px;}
+div.submenu ul > li:nth-child(2){margin-top: 60px; left:0px;}
+div.submenu ul > li:nth-child(3){margin-top: 90px; left:0px;}
+div.submenu ul > li:nth-child(4){margin-top: 120px; left:0px;}
+div.submenu ul > li:nth-child(5){margin-top: 150px; left:0px;}
+div.submenu ul > li:nth-child(6){margin-top: 180px; left:0px;}
+div.submenu ul > li a{font-size: 13px;}
+
+
+#wrap {}
+#brand_at { position: relative; width:100%; margin:0 auto; overflow:hidden; height:900px; background:#8c908c;}
+#brand_at ul { position: relative; float: left; width: 100%; height: 900px;}
+#brand_at li { position: absolute; width: 100%; height: 900px;}
+#brand_at li a {display: block;text-indent: -9999px}
+#brand_at li.im0 {left:0px; background:url("../images/3716997788_b0aad225_bg_mainvisual01.jpg") center no-repeat; background-size: cover;}
+#brand_at li.im1 {left: 100%;  background:url("../images/3716997788_802499a4_bg_mainvisual02.jpg") center no-repeat; background-size: cover;}
+#brand_at li.im2 {left: 200%; background:url("../images/3716997788_9fd4dbd4_bg_mainvisual03.jpg") center  no-repeat; background-size: cover;}
+#brand_at li.im3 {left: 300%; background:url("../images/3553237613_c1f5e733_bg_mainvisual04.jpg") center no-repeat; background-size: cover;}
+
+/* button */
+#buttonList li{position:relative; background:url("../images/btnVisual.png") 0 -18px no-repeat; width:10px; height:10px; border-radius:30px; float:left; left:47%;  top:-60px; overflow:hidden; margin:0 10px; cursor:pointer;}
+#buttonList li.on { background-position:0 0;}
+#buttonList li a {display:block;text-indent:-9999px}
+button.leftbutton{position:absolute; background: url("../images/arrow_left_main.png") no-repeat; top:350px; left:40px; border: none; cursor: pointer;}
+button.rightbutton{position:absolute; background: url("../images/arrow_right_main.png") no-repeat; top:350px; right:40px; border: none; cursor: pointer;}
+#wrap button{width: 30px; height: 100px; z-index: 999; text-indent: -9999px;  border: none;}
+
+/* footer */
+footer{ width: 69%; height: 125px; margin: auto; display: flex; flex-direction: column; flex-wrap: wrap; align-content: space-between;}
+footer h1 img{margin-top: 22px; margin-bottom: 22px;}
+.footer_info {display: flex; width: 60%; height: 125px; flex-direction: column; flex-wrap: wrap; align-items: center;}
+.footer_info p {margin-left: 23px; width: 100%; height: 62px; box-sizing: border-box; padding-top: 40px; font-size: 14px; color: #505050;}
+.footer_info p:last-child { padding: 2px 0 0 0; font-size: 15px;}
+.icon { width: 38%; height: 62px; margin-left: 33px; margin-top: 8px;}
+.icon ul li {float: left; margin-left: 28px; padding-top: 8px;}
+.icon ul li:first-child { margin-right: 30px; margin-left: 0;}
+.btn_box ul{display: flex; flex-direction: row; justify-content: flex-start }
+.btn_box ul li a{display: block; margin-top: 12px; margin-left : 33px; color:#fff; font-size: 17px; background-color: #9c9e9c; box-sizing: border-box; padding: 2px 27px 2px 27px; letter-spacing: -1.5px; }
+.btn_box ul li:last-child a { margin-left: 10px; }

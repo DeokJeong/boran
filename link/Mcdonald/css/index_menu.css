@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* atricle */
+article{width:1922px; height:220px; background:url(../images/bg_banner/bg_visual_menu01.jpg) no-repeat top center; margin:0 auto; position:relative; top:140px;}
+article div{width:1168px; height:200px; position:absolute; color:#292929;  margin-left:365px; margin-top:10px;}
+article h3{height:70px; line-height:70px; font-size:47px; margin-top:15px;}
+article p{height:38px; line-height:38px; font-size:16px; font-weight:bold; margin-top:-40px;}
+
+article ul li{width:150px; height:16px; margin-top:35px; margin-left:-60px; font-size:15px; line-height:16px; float:left;}
+article ul li:nth-child(1){width:50px;}
+article ul li:nth-child(2){width:48px; margin-left:10px; padding:0 5px;}
+article ul li:nth-child(3){width:40px; margin-left:20px; padding:0 20px;}
+
+article ul li span{display:inline-block; background:url(../images/drive/orange.png) no-repeat right center; padding:0 20px;}
+
+/* section */
+section{width:100%; height:2840px; background:blue; padding:30px 0 60px;}
+section div.section_in{width:1168px; height:1075px; background:red; margin:0 auto;}
+
+/* section 메뉴*/
+section div ul.top{height:20px; background:yellow;}
+section div ul.top li{background:yellowgreen;}
+section div p.top1{background:green;}
+
+/* section 메뉴리스트*/

@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family:"맑은 고딕"; color:#292929;}
+
+/*Header_Area*/
+
+
+/*Aarticle_Area*/
+div.Article_Area{position: relative; top:140px; width: 100%;}
+div.Article_Area article{height: 220px; width: 100%; background: url("../img/Sustainability/bg_visual_story02.jpg") no-repeat top center; background-size:cover;}
+div.Article_Area div{width:1168px; height:220px; margin:0 auto; }
+div.Article_Area div h2{width: 1168px; height: 50px; float: left; font-size: 50px; color: #fff; margin-top: 34px; font-weight: 500px;}
+div.Article_Area div p{ display: inline-block; float: left; font-size: 18px; margin-top: 31px; color: #fff; line-height: 26px; width:1168px; font-weight: bold;}
+div.Article_Area li a{color: #fff;float: left; font-size:16px; display:inline-block; margin-left: 20px; margin-top: 23px; width:auto; font-weight: bold;}
+div.Article_Area ul li:nth-child(1) a{margin-left: 0px;}
+
+article div li:nth-child(2) a:before{ content: ""; display: inline-block; width: 6px; height: 6px; line-height: 15px;  border-radius: 6px; background-color: #F5BD43; float: left; margin-right: 20px; margin-top: 7px;}
+article div li:nth-child(3) a:before{ content: ""; display: inline-block; width: 6px; height: 6px; line-height: 15px;  border-radius: 6px; background-color: #F5BD43; float: left; margin-right: 20px; margin-top: 7px;}
+
+
+/*Section_Area*/
+div.Seaction_Area{width:1168px; margin:0 auto; position:relative; top:140px; margin-bottom: 380px;}
+ 
+/* 제목태그 McDonald's Sustainability */
+div.Seaction_Area section h2:nth-child(2){font-size:25px;  margin:32px 0 36px;}
+
+
+/* section div */
+div.Seaction_Area div.Seaction_1{width:1170px; height: 600px; margin:auto;}
+div.Seaction_Area div.Seaction_1 div{width:560px; height:572px; float: left;}
+div.Seaction_Area div.Seaction_1 div:nth-child(2){margin-left:50px;}
+
+div.Seaction_Area div.Seaction_1 dt{font-size: 24px; margin:36px 0 18px; word-spacing: -3px;}
+div.Seaction_Area div.Seaction_1 dd{color:#808080; font-weight: bold; word-spacing: -2px; font-size: 16px; line-height: 30px;}
+
+
+
+

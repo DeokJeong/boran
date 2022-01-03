@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*Header_Area*/
+
+/*Aarticle_Area*/
+div.Article_Area{position: relative; top:140px;}
+div.Article_Area article{height:204px; width: 100%; background: url("../img/story_main/bg_visual_storymain.jpg") no-repeat top center; background-size: cover;}
+div.Article_Area article div{width:1168px; height:204px; margin:0 auto;}
+div.Article_Area article h1{display:inline-block; margin-top: 64px; font-size:110px; font-weight: 600;  color: #292929;}
+
+/*Section_Area*/
+div.Section_Area{position: relative; top:140px; margin-bottom: 40px;}
+div.Section_Area section{width: 1168px;height: 2806px; margin: 0 auto; margin-top: 26px;}
+div.Section_Area section p:nth-child(2){font-size:30px; font-weight: bold;  color: #292929;}
+div.Section_Area section p:nth-child(3){font-size:16px; margin-top:38px; line-height:200%; color:#808080; font-weight: bold;}
+
+div.Section_Area section h2{color: #292929;  font-size: 40px; font-weight: 600;}
+div.Section_Area section dt{color: #292929;}
+div.Section_Area section dd{color:#838080; font-weight: bold;}
+div.Section_Area section li a{display: inline-block; border-radius:45px; background-color:#ffbc0d; color:#292929; font-weight: bold; }
+
+
+div.Section_Area section div{width: 518px; height: 378px; padding: 20px 0 0 70px;}
+div.Section_Area section ul li:nth-child(1) div{margin-left: 650px;}
+div.Section_Area section ul li:nth-child(2) div{height: 454px;}
+div.Section_Area section ul li:nth-child(3) div{margin-left: 650px;}
+
+
+/*브랜드 소개*/
+div.Section_Area section ul li:nth-child(1){width:1168px; height: 500px; background: url("../img/story_main/img_submenu01.jpg")no-repeat left center; margin-top: 108px; }
+div.Section_Area section ul li:nth-child(1) h2{ margin-top: 28px;}
+div.Section_Area section ul li:nth-child(1) dt{font-size: 18px; font-weight: bold; margin-top: 37px; height: 53px;}
+div.Section_Area section ul li:nth-child(1) dd{font-size: 15px; margin-top: 35px; height: 75px;}
+div.Section_Area section ul li:nth-child(1) a{font-size: 14px; margin-top: 43px; width: 172px; height: 70px; text-align: center; line-height: 70px;}
+
+/*사회적 책임*/
+div.Section_Area section li:nth-child(2){width: 1168px; height: 450px; background: url("../img/story_main/img_submenu02.jpg")no-repeat right center; margin-top: 158px; }
+div.Section_Area section ul li:nth-child(2) h2{margin-top: 30px;}
+div.Section_Area section ul li:nth-child(2) dt{font-size: 18px; font-weight: bold; margin-top: 36px;}
+div.Section_Area section ul li:nth-child(2) dd{font-size: 15px; margin-top: 35px; }
+div.Section_Area section ul li:nth-child(2) a{font-size: 14px; margin-top: 43px; width: 172px; height: 70px; text-align: center; line-height: 70px; }
+
+/*경쟁력*/
+div.Section_Area section ul li:nth-child(3){width:1168px; height: 405px; background: url("../img/story_main/img_submenu03.jpg")no-repeat left center; margin-top: 161px; }
+div.Section_Area section ul li:nth-child(3) h2{margin-top: 28px;}
+div.Section_Area section ul li:nth-child(3) dt{font-size: 18px; font-weight: bold; margin-top: 37px; height: 53px;}
+div.Section_Area section ul li:nth-child(3) dd{font-size: 15px; margin-top: 35px; height: 75px;}
+div.Section_Area section ul li:nth-child(3) a{font-size: 14px; margin-top: 43px; width: 172px; height: 70px; text-align: center; line-height: 70px;}
+
+/*사람들*/
+div.Section_Area section ul li:nth-child(4){width: 1168px; height: 600px; background: url("../img/story_main/img_submenu04.jpg")no-repeat right center; margin-top: 158px; }
+div.Section_Area section ul li:nth-child(4) h2{margin-top: 30px;}
+div.Section_Area section ul li:nth-child(4) dt{font-size: 18px; font-weight: bold; margin-top: 36px;}
+div.Section_Area section ul li:nth-child(4) dd{font-size: 15px; margin-top: 35px; }
+div.Section_Area section ul li:nth-child(4) a{font-size: 14px; margin-top: 43px; width: 172px; height: 70px; text-align: center; line-height: 70px; }
+
+/*Foorer_Area*/

@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset*/
+body,header,article,section,footer,div,nav,ul,li,h1,h2,h3,h4,h5,h6,a,hr,dt,dd,span,p,table,tr,th,td{margin:0; padding:0;}
+.hidden{display:none;}
+ul,li{list-style:none; text-decoration:none;}
+a{text-decoration:none;color:#000;}
+table, td {border:1px solid; border-collapse:collapse;}

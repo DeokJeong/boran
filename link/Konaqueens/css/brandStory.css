@@ -1,0 +1,137 @@
+@charset "UTF-8";
+button{margin: 0; padding: 0;}
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.BS{
+    width: 100%;
+}
+.BS h2{
+    width: 320px;
+    margin: 0 auto;
+    font-size: 2.5vw;
+    font-family:'yg-jalnan';
+    margin-bottom: 145px;
+    padding-top: 232px;
+}
+.BS .container_BS{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.BS .container_BS .row .pic img{
+    width: 490px;
+    height: 350px;
+}
+.TT{
+    margin-top: 20px;
+    text-align: center;
+    font-family:'yg-jalnan';
+}
+.TT h3{
+    color:#fd4a06;
+    padding-bottom: 14px;
+}
+.TT p{
+    font-family: 'SBAggroL';
+    margin-bottom: 140px;
+}
+
+.container_BSU{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container_BSU .row{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.container_BSU .row .logo{
+    width: 200px; 
+    height:100px; 
+    margin-bottom:10px;
+    background-image: url(../img/Logo1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.UTT{
+    font-family:'yg-jalnan';
+    font-size: 24px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.UTT span{
+    font-size:38px;
+    color:#fd4a06;
+}
+.BSBTN{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.gostore{
+    background-color: #fd4a06;
+    border-radius: 40px;
+    width: 230px;
+    height: 56px;
+    border:none;
+    color:#fff;
+    margin-top: 20px;
+    font-family: 'SBAggroL';
+
+}
+@media screen and (max-width:764px) {
+
+    .BS h2{
+        width: 280px;
+        margin: 0 auto;
+        font-size: 44px;
+        padding-bottom: 50px;
+    }
+    .BS .container_BS{
+        width: 100%;
+    }
+    .container_BSU{
+        width: 100%;
+    }
+    
+    .BS .container_BS .row .pic img{
+        width: 245px;
+        height: 175px;
+        margin-left:15%
+    }
+    .UTT{
+        font-family:'yg-jalnan';
+        font-size: 16px;
+        line-height: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+
+    }
+    .UTT span{
+        font-size:30px;
+        color:#fd4a06;
+    }
+    .BSBTN{
+        justify-content: center;
+    }
+}

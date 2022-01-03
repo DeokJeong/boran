@@ -1,0 +1,59 @@
+@charset="UTF-8";
+
+
+/* header */
+
+/*ºñÁÖ¾ó*/
+article{width:100%; height: 223px; top:140px; position: relative; padding: 15px 0;}
+article div.articleArea{height:223px; background:url(../images/bg_visual_whats01.jpg) no-repeat top center; }
+article div.article{width:1168px; height: 223px;  margin: 0 auto;}
+article h3{widows: 400px; height:48px; font-size:48px; line-height: 248px; font-weight:bold; float:left; color:#fff; font-family: "SpeedeeK", "Malgun Gothic",'¸¼Àº °íµñ',"Dotum","µ¸¿ò","Arial"; font-size: 50px; letter-spacing: -3px; word-spacing: -5px;}
+article nav{position:absolute; top:210px; letter-spacing: 0px;  font-size: 15px; font-weight:bold; margin:5px; }
+article nav ul li{float:left; font-weight:bold; font-family: "SpeedeeK", "Malgun Gothic",'¸¼Àº °íµñ',"Dotum","µ¸¿ò","Arial",sans-serif; margin-left:0px; }
+article nav ul li a{float:left; color:#fff; margin-left: 15px;}
+
+
+/*ÄÁÅÙÃ÷*/
+/*ÀüÃ¼º¸±â, ÁøÇà Áß, Á¾·á*/
+section{width:100%; height:100%; position: relative; top:140px;}
+section div.section_area1{width:470px; height:30px; margin:0 auto; margin-top:40px;}
+section div li{float:left; font-size:20px; margin-right:84px; display:block;}
+section div ul li:nth-child(1){margin-left:0px;}
+section div li a{font-weight:bold; color:#808080;}
+section div ul li:nth-child(1) a{border-bottom:1px solid; color:#db0007; padding-bottom:10px; font-weight:bold;}
+
+/*ÀüÃ¼º¸±â ÀÌ¹ÌÁö*/
+section div.section_area2{width:1168px; height:1240px; margin:0 auto;}
+section div.tmb1{width:366px; height:438px; border-radius:10px; position:absolute; top:130px; box-shadow:0 3px 4px rgb(0,0,0,0.2); } 
+section div.tmb1 style{border-radius: 10px 10px 0 0;}
+section div.tmb1 div > p{width:366px; text-align:center;font-size:18px; top:323px; line-height:30px; left:30px; font-family:"¸¼Àº °íµñ"; font-weight:bold; letter-spacing: -2px; color:#292929;} 
+
+section div.tmb2{width:366px; height:438px; border-radius:10px; position:absolute; left:401px; bottom:0px; box-shadow:0 3px 4px rgb(0,0,0,0.2);} 
+section div.tmb2 style{border-radius: 10px 10px 0 0;}
+section div.tmb2 div > p{font-size:18px; top:323px; line-height:30px; left:30px; font-family:"¸¼Àº °íµñ"; font-weight:bold; letter-spacing:-2px; color:#292929;} 
+
+section div.tmb3{width: 366px; height:438px; border-radius:10px; position:absolute; left:802px; bottom:0px; box-shadow:0 3px 4px rgb(0,0,0,0.2);} 
+section div.tmb3 style{border-radius: 10px 10px 0 0;}
+section div.tmb3 div > p{font-size:18px; top:323px; line-height:30px; left:30px; font-family:"¸¼Àº °íµñ"; font-weight:bold; letter-spacing:-2px; color:#292929;} 
+
+section div.tmb4{width:366px; height:438px; border-radius:10px; position:absolute; top:473px; bottom:0px; box-shadow:0 3px 4px rgb(0,0,0,0.2);} 
+section div.tmb4 style{border-radius: 10px 10px 0 0;}
+section div.tmb4 div > p{font-size:18px; top:323px; line-height:30px; left:30px; font-family:"¸¼Àº °íµñ"; font-weight:bold; letter-spacing:-2px; color:#292929;} 
+
+section div.tmb5{width:366px; height:438px; border-radius:10px; position:absolute; top:473px; left:401px; bottom:0px; box-shadow:0 3px 4px rgb(0,0,0,0.2);} 
+section div.tmb5 style{border-radius: 10px 10px 0 0;}
+section div.tmb5 div > p{font-size:18px; top:323px; line-height:30px; left:30px; font-family:"¸¼Àº °íµñ"; font-weight:bold; letter-spacing:-2px; color:#292929;} 
+
+section div.tmb6{width:366px; height:438px; border-radius:10px; position:absolute; top:473px; left:802px; bottom:0px; box-shadow:0 3px 4px rgb(0,0,0,0.2);} 
+section div.tmb6 style{border-radius: 10px 10px 0 0;}
+section div.tmb6 div > p{font-size:18px; top:323px; line-height:30px; left:30px; font-family:"¸¼Àº °íµñ"; font-weight:bold; letter-spacing:-2px; color:#292929;} 
+
+section div button.btn9{width:100px; height:100px; border:none; background:url(../images/btn_more.png)no-repeat; position:absolute; margin:1100px 560px; text-indent: -9999px;}
+
+div#footer_Area{width:100%; height:259px; background-color:#292929; color:#909090; position:absolute; margin-top: 1366px;}
+div#footer_Area footer{width:1168px; margin:0 auto; position:relative; top:20px;}
+
+section div button.btn9{width:100px; height:100px; border:none; background:url(../images/btn_more.png) no-repeat; text-indent:-9999px; margin:1100px 560px;}
+
+
+/* ÇªÅÍ¿µ¿ª */

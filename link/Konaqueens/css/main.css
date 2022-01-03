@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@font-face {font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal}
+@font-face {font-family: 'SBAggroB';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');font-weight: normal; font-style: normal;}
+
+/* reset */
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,address,strong,tt,var,b,u,dl,dt,dd,ol,ul,li,tr,th,td,article,footer,header,menu,nav,section{
+    margin:0px;
+    padding:0px;
+}
+.hidden{
+    display: none;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* 헤더 */
+
+
+/*아티클*/
+#slide_main {
+     position:relative;
+     width:100%; 
+     overflow:hidden;
+     height:900px;
+    }
+#slide_main ul { 
+    position:relative; 
+    float:left; 
+    width:100%; 
+    height:900px;
+}
+#slide_main li { 
+    position:absolute; 
+    width:100%;
+    height:900px;
+}
+#slide_main li a {
+    display:block;
+    text-indent:-9999px
+}
+#slide_main .banner1 {
+    left:0px; 
+    background:url("../img/main/banner2.png")no-repeat;
+    background-size: cover;
+}
+#slide_main .banner2 {
+    left: 100%;  
+    background:url("../img/main/banner1.jpg") no-repeat;
+    background-size: cover;
+}
+#slide_main .banner3 {
+    left: 200%; 
+    background:url("../img/main/banner3.jpg") no-repeat;
+    background-size: cover;
+}
+
+#buttonList:after {
+    content:"";
+     display:block; 
+     clear:both;
+    }
+#buttonList li{
+     background:url("../img/main/btn.png") 0 -14px no-repeat; 
+     width:18px; 
+     height:18px; 
+     float:left;
+     position:relative; 
+     left:47%;
+    top:-50px;
+     margin:0 5px; 
+     cursor:pointer;
+    }
+#buttonList li.on { 
+    background-position:0 0;
+}
+#buttonList li a {
+    display:block;
+    text-indent:-9999px
+}
+@media all and (max-width:720px) {
+    #buttonList li{
+        top: -700px;
+        left: 42%;
+    }
+    #slide_main .banner1 {
+        background-size: contain;
+    }
+    #slide_main .banner2 {
+        background-size: contain;
+    }
+    #slide_main .banner3 {
+        background-size: contain;
+    }
+}
+
+
+
+/*섹션*/
+section{
+    width: 100%;
+    height: 4000px;
+}
+section > div{
+    margin-top: 100px;
+}
+.left{
+    position: relative;
+    width: 60%;
+    height: 460px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+.left .text{
+    margin-left: 200px;
+    align-self: center;
+}
+.left img{
+    width: 460px;
+    height: 460px;
+}
+.right{
+    position: relative;
+    width: 60%;
+    height: 460px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+    text-align: left;
+}
+.right .text{
+    margin-right: 200px;
+    align-self: center;
+}
+.right img{
+    width: 460px;
+    height: 460px;
+}
+.leftbutt{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    margin-top: 350px;
+    margin-left: 450px;
+    border-radius: 100%;
+    background: #ff6426;
+    font-family: 'yg-jalnan';
+    font-size: 15px;
+    border:none;
+}
+.leftbutt a:hover,.leftbutt a:visited,.leftbutt a:link{
+    text-decoration: none;
+    color: #fff;
+}
+.rightbutt{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    margin-top: 350px;
+    margin-right: 450px;
+    border-radius: 100%;
+    background: #ff6426;
+    font-family: 'yg-jalnan';
+    font-size: 15px;
+    border: none;
+}
+.rightbutt a:hover,.rightbutt a:visited,.rightbutt a:link{
+    text-decoration: none;
+    color: #fff;
+}
+section h3{
+    font-size: 44px;
+    font-family: 'yg-jalnan';
+    font-weight: normal;
+    font-style: normal;
+}
+div.text p{
+    padding-top: 15px;
+    font-size: 18px;
+    font-family: 'SBAggroB';
+    font-weight: normal;
+    font-style: normal;
+}
+section > div > div {
+    margin-top: 200px;
+    opacity: 0;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+section > div > div.active{
+    opacity: 1;
+    margin-top: 100px;
+}
+
+@media all and (max-width:720px) {
+    section > div{
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+        top: -460px;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        margin-bottom: 300px;
+    }
+    div.bg1{
+        margin: 0 auto;
+    }
+    .left .text{
+        margin-left: 0;
+    }
+    .right .text{
+        margin-right: 0;
+    }
+    .left h3{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .right h3{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .leftbutt{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top:455px;
+        left:40%;
+    }
+
+
+    .right {
+        width: 100%;
+        top: -460px;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        margin-bottom: 300px;
+    }
+    div.bg2{
+        margin: 0 auto;
+    }
+    div.bg3{
+        margin: 0 auto;
+    }
+    div.bg4{
+        margin: 0 auto;
+    }
+    div.bg5{
+        margin: 0 auto;
+    }
+    div.bg6{
+        margin: 0 auto;
+    }
+    .right .text{
+        margin-left: 0;
+    }
+
+    .rightbutt{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top:455px;
+        left:40%;
+    }
+    
+    div.text p{
+        display: none;
+    }
+}

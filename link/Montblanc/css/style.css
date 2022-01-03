@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+/* 초기화 */
+body,div,header,ul,li,article,section,footer,h1,h2,h3,hr,dt,dd,dl{margin:0;padding:0;}
+.hidden{display:none;}
+ul,li{list-style:none; }
+a{text-decoration:none; color: #fff;}
+hr{border:none; }
+dt,dd{color: #000;}
+address{font-style:normal;}
+
+
+/* header */
+header{width:100%; height: 107px; background-color: #202020;}
+header div.titleArea{width:1890px; height: 64px; background:#202020; margin: 0 auto; }
+
+header div.menu1{float: left; width: 154px; height: 21px; line-height: 40px; font-size: 12px; margin: 0 0 0 356px; }
+header div.menu1 li:nth-child(1){float: left; width: 21px; margin-right:47px; padding-top:35px; background:url(../images/icon1.png) no-repeat right center;  text-indent:-9999px;}
+header div.menu1 li:nth-child(2){float: left; width: 17px; margin-right:49px; padding-top:31px; background:url(../images/icon2.png) no-repeat center; text-indent:-9999px;}
+header div.menu1 li:nth-child(3){float: right; width: 20px; padding-top:31px; background:url(../images/icon3.png) no-repeat center; text-indent:-9999px;}
+
+header div h1{float:left; position: relative; left:-170px;  width: 700px; height: 40px; margin-top:13px; background:url(../images/logo.png) no-repeat right center; text-indent:-9999px; }
+
+
+header div.menu2{float: left; height: 40px; line-height: 40px; font-size: 12px; margin: 16px 0 0 60px; }
+header div.menu2 li:nth-child(1){float: left; width: 130px; background:url(../images/icon4.png) no-repeat right center; margin: 0 20px;}
+header div.menu2 li:nth-child(2){float: left; width: 50px;  background:url(../images/icon5.png) no-repeat center;  margin: 0 10px; text-indent:-9999px;}
+header div.menu2 li:nth-child(3){float: right; width: 30px;  background:url(../images/icon6.png) no-repeat center;   margin: 0 15px; text-indent:-9999px;}
+
+header div.titleArea + hr{height: 0.5px; background-color:#eee; clear:both;}
+
+header nav{width: 980px; height: 43px; margin: 0 auto; text-align: center;}
+header nav li{display:inline-block; font-size: 11px; text-align: center; margin: 12px 22px;}
+
+/* atricle */
+article{height:375px; background:url(../images/hero-opener-personalised-gifts-desktop.jpg.adapt.1440.400.webp) no-repeat top center; background-size:cover; margin-bottom:80px; }
+article p{width:260px; height: 39px; margin: 0 auto;}
+article p.big{width:335px; font-size:42px;  margin-left: 360px; padding-top:220px; word-spacing: -0.5px; color: #fff;}
+article p.small{width:335px; font-size:15px; margin-left: 360px; color: #fff;}
+
+/* product */
+section div.product{position:relative; width: 1200px; height: 2200px;  color: #000;  margin: 0 auto; }
+
+
+
+/* 01 */
+section div#item01 {width: 280px; top:1px;height: 390px; background-color:#f2f2f2; position: absolute;  }
+section div#item01 a img.bg1{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item01 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item01 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item01 a div.eee:visited{background:url(../images/eeee.png) no-repeat;}
+section div#item01 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 02 */
+section div#item02 {left: 306px; top:1px; width: 280px; height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item02 a img.bg2{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item02 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item02 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item02 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 03 */
+section div#item03 {left: 612px; top:1px; width: 280px; height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item03 a img.bg3{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item03 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item03 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item03 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 04 */
+section div#item04 {left: 918px; top:1px; width: 280px;height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item04 a img.bg4{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item04 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item04 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item04 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 05 */
+section div#item05 {width: 280px; top:539px;height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item05 a img.bg5{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item05 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item05 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item05 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 06 */
+section div#item06 {left: 306px; top:539px; width: 280px; height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item06 a img.bg6{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item06 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item06 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item06 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 07 */
+section div#item07 {left: 612px; top:539px; width: 280px; height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item07 a img.bg7{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item07 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item07 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item07 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 08 */
+section div#item08 {left: 918px; top:539px; width: 280px;height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item08 a img.bg8{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item08 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item08 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item08 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 09 */
+section div#item09 {width: 280px; top:1078px;height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item09 a img.bg9{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item09 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item09 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item09 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 10 */
+section div#item10 {left: 306px; top:1078px; width: 280px; height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item10 a img.bg10{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item10 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item10 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item10 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 11 */
+section div#item11 {left: 612px; top:1078px; width: 280px; height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item11 a img.bg11{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item11 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item11 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item11 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 12 */
+section div#item12 {left: 918px; top:1078px; width: 280px;height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item12 a img.bg12{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item12 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item12 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item12 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 13 */
+section div#item13 {width: 280px; top:1617px;height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item13 a img.bg13{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item13 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item13 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item13 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 14 */
+section div#item14 {left: 306px; top:1617px; width: 280px; height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item14 a img.bg14{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item14 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item14 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item14 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 15 */
+section div#item15 {left: 612px; top:1617px; width: 280px; height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item15 a img.bg15{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item15 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item15 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item15 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+
+/* 16 */
+section div#item16 {left: 918px; top:1617px; width: 280px;height: 390px; background-color:#f2f2f2; position: absolute; }
+section div#item16 a img.bg16{width: 225px;height: 225px; margin: 70px 0 0 27.5px;}
+section div#item16 a div.eee{width: 30px; height: 30px; background:url(../images/eee.png) no-repeat; margin: 40px 0 0 245px; text-indent:-9999px;}
+section div#item16 a div.eee:hover{background:url(../images/eeee.png) no-repeat;}
+section div#item16 dl dt{margin-bottom:6px; font-size: 15px; margin-top: 40px; }
+section div#item16 dl dd{padding-bottom:100px; }
+
+.help{text-align: center; margin: 20px; font-size: 16px;}
+
+/* hr */
+hr{height: 0.5px; background-color:#bbb; clear:both;}
+#footermenu+hr{background-color:#444; height: 1px;}
+
+/* 메뉴 footer */
+div#footerArea{width:100%; bottom:0; background-color: #202020;}
+
+div#footermenu{width: 1190px; height: 497px; margin: 0 auto; }
+div h2{line-height:70px; font-size: 22px; font-weight:normal; padding-top: 10px;}
+div#foot1{float:left; padding-left: 10px; line-height:35px; }
+div#foot2{float:left;  line-height:35px;}
+div#foot3{float:left;  line-height:35px;}
+div.foot{margin: 0 auto; width: 266px; height: 400px; font-size: 15px; margin-top:30px; }
+
+/* 오른쪽 footer */
+div#footerArea div h2{color: #fff;}
+div#foot4{width:357px;  float:left;}
+div#foot4 h2{font-size: 20.5px;}
+
+/* 오른쪽 input */
+footer form fieldset.emailset{float: left; width: 330px; height:  30px;}
+fieldset{ border-color:#fff;}
+footer input.emailaddress{width: 270px; height: 30px; background-color:transparent; border:none; margin-top:3px;}
+input::placeholder{color: #fff; font-size: 15px;}
+footer input.emailsubmit{width:  45px; height:  30px; margin-top:2px; background-color:transparent; border:none; text-indent:-9999px; background:url(../images/right.png) center no-repeat;}
+
+/* 오른쪽 footer SNS 이미지 */
+footer div.social h2{padding-top:100px; padding-left:5px;}
+footer div.social li:nth-child(1){float: left; width: 36px; height: 25px; background:url(../images/m1.png) no-repeat; text-indent:-9999px;}
+footer div.social li:nth-child(2){float: left; width: 36px; height: 25px; background:url(../images/m2.png) no-repeat; text-indent:-9999px;}
+footer div.social li:nth-child(3){float: left; width: 36px; height: 25px; background:url(../images/m3.png) no-repeat; text-indent:-9999px;}
+footer div.social li:nth-child(4){float: left; width: 36px; height: 25px; background:url(../images/m4.png) no-repeat; margin-left: 10px; text-indent:-9999px;}
+footer div.social li:nth-child(5){float: left; width: 40px; height: 25px; background:url(../images/m5.png) no-repeat; margin-left: 15px; text-indent:-9999px;}
+footer div.social li:nth-child(6){float: left; width: 36px; height: 25px; background:url(../images/m6.png) no-repeat; margin-left: 25px; text-indent:-9999px;}
+
+footer div#kcp{float:left; width:210px; height:100px; margin-top: 20px;}
+div.kcpci1 {float:left; width:100px; height:100px; background:url(../images/kcp.png) center no-repeat; text-indent:-9999px; }
+div.kcpci2 {float:right; width:100px; height:100px; background:url(../images/kcp2.png) center no-repeat; text-indent:-9999px; }
+
+
+/* 하단 footer */
+footer div.adressArea{width: 100%; height: 202px; background-color: #202020; }
+footer div.adressArea div.terms{width: 1190px; height: 30px; line-height: 30px; margin: 0 auto; font-size: 12px; padding-top:15px;}
+footer div.adressArea div a:nth-child(1){padding-left: 10px;}
+footer div.adressArea div a:nth-child(2){padding-left: 30px;}
+footer div.adressArea div a:nth-child(3){margin-left: 30px; padding-left: 20px; text-align: right; background:url(../images/m7.png) no-repeat left;}
+footer div address{width:1190px; margin: 0 auto;color:#ACACAC; font-size: 14px; text-align: center; margin-top:40px; letter-spacing: 1px; }
+footer div address a{color:#ACACAC;}
+footer div.adressArea small{float: left; margin-left:350px; font-weight:normal; color:#fff; letter-spacing:-0.6px;}
+footer div.adressArea div.bo{float: right;  width: 130px; height: 30px; text-align: left; color:#fff; background:url(../images/top.png)right center no-repeat; margin-right: 350px; }

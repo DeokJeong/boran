@@ -1,0 +1,40 @@
+@charset="UTF-8";
+
+/* reset */
+body, header,article,section,footer,div,nav,ul,li,h1,h2,h3,a,hr,dt,dd,span{margin:0px; padding:0px;}
+.hidden{display:none;}
+ul,li{list-style: none;}
+a{text-decoration: none; color:#000;}
+
+/* header */
+header{width:100%; height:523px; background-color:pink;}
+header div.titlearea{width:1168px; height:137px;  margin:0 auto; background-color:green;}
+
+/* header_logo */
+header div h1{float: left; width: 106px; height:137px;  background-image:url(../image/logo.png); background-repeat: no-repeat; background-position:center; margin-top:6px; text-indent:-9999px;}
+
+/* header_main menu */
+header div.titlearea nav.MCmenu1{float:left; background-color:yellow; width:663px; height:137px;}
+header div.titlearea nav.MCmenu1 ul li.menu1:nth-child(1){float:left; width:100px; background-color:blue; }
+header div.titlearea nav.MCmenu1 ul li.menu1:nth-child(2){float:left; width:100px; background-color:pink; }
+header div.titlearea nav.MCmenu1 ul li.menu1:nth-child(3){float:left; width:100px; background-color:green; }
+header div.titlearea nav.MCmenu1 ul li.menu1:nth-child(4){float:left; width:100px; background-color:red; }
+
+/* header_right menu */
+header div.titlearea div.MCmenu2{float:right; width:400px; height:137px; background-color:red; line-height:137px;}
+header div.titlearea div.MCmenu2 a.mn1:nth-child(1){float:left; width: 75px; height:37px; line-height: 37px; font-size: 13px; display: inline-block; text-align: center; border-radius: 45px; background:#db0007; font-weight: bold; color:white; margin: 0 3px auto;}
+header div.titlearea div.MCmenu2 a.mn1:nth-child(2){float:left; width: 75px; height:37px; line-height: 37px; font-size: 13px; display: inline-block; text-align: center; border-radius: 45px; background:#ffbc0d; font-weight: bold; color:white; margin: 0 3px auto;}
+header div.titlearea div.MCmenu2 a.mn1:nth-child(3){float:left; width: 75px; height:37px; line-height: 37px; font-size: 13px; display: inline-block; text-align: center; border-radius: 45px; background:#264a36; font-weight: bold; color:white; margin: 0 3px auto;}
+header div.titlearea div.MCmenu2 a.mn2:nth-child(4){float:left; width: 50px; height:37px; background:url(../image/ico_search.png)no-repeat center right; margin-left: 14px; text-indent:-9999px;}
+
+/* header_sub menu */
+header nav.MCmenu1 ul.mn{float:left; width: 150px; height: 400px; text-align: left;  background-color:#ccc;}
+header nav.MCmenu1 ul.mn li a.mn0{float:left;  text-align: left; font-size:15px; width:140px;   height:20px; line-height: 20px; font-family:"¸¼Àº°íµñ"; border:1px solid red; }
+header nav.MCmenu1 ul.mn li a.mn0:hover{border-bottom:1px solid; padding-bottom:5px; color:#000 }
+
+
+article{width:1920px; height:545px; background-color:yellow; margin:0 auto;}
+
+section{width:1920px; height:1245px; background-color:blue; margin:0 auto;}
+
+footer{width:1920px; height:260px; background-color:green; margin:0 auto;}

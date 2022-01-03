@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko-kr">
+  <head>
+          <meta charset="utf-8">
+          <title>코나퀸즈카페 홈</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          
+          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" href="./css/header.css">
+          <link rel="stylesheet" href="./css/footer.css">
+          <script src="./js/header.js"></script>
+          <script src="./js/store.js"></script>
+          <link rel="stylesheet" href="./css/store.css">
+  </head>
+  <body>
+     <!-- header -->
+     <header>
+		<h2 class="hidden">해더영역</h2>
+		<div class="logoArea">
+		    <h1 class="logo"><a href="./main.html"><img src="./img/Logo2.png" width="170" height="85" alt="로고"></a></h1>
+            <a href="#" id="nawa"><img src="./img/ham.png" width="50px" height="50px"></a>
+		</div>
+        <div class="subBackground"></div>
+            <nav class="wrapper">
+                <ul id="mainmenu">
+                <li id="inside_jardin">
+                    <a href='./brandStory.html'>BRAND STORY</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href='#'>코나퀸즈 소개</a></li>
+                            <li><a href='#'>하와이안 코나이야기</a></li>
+                            <li><a href='#'>커피 이야기</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="menu">
+                    <a href='./MENU.html'>MENU</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href='#'>전체 메뉴</a></li>
+                            <li><a href='#'>커피</a></li>
+                            <li><a href='#'>차</a></li>
+                            <li><a href='#'>스무디 & 프라푸치노</a></li>
+                            <li><a href='#'>케이크</a></li>
+                            <li><a href='#'>MD</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="store">
+                   <a href='./store.html'>STORE</a>
+                   <div class="submenu"> 
+                        <ul>
+                            <li><a href='#'>매장 찾기</a></li>
+                            <li><a href='#'>오픈예정점</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="franchise">
+                    <a href='./Franchise.html'>FRANCHISE</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href='#'>코나퀸즈 경쟁력</a></li>
+                            <li><a href='#'>개설비용</a></li>
+                            <li><a href='#'>개설절차</a></li>
+                            <li><a href='#'>인테리어</a></li>
+                            <li><a href='#'>가맹문의&사업설명회</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="news">
+                    <a href='./event.html'>KONA NEWS</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href='#'>이벤트</a></li>
+                            <li><a href='#'>코나소식</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="customer">
+                    <a href='./customer.html'>CUSTOMER</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href='#'>고객의 소리</a></li>
+                            <li><a href='#'>FAQ</a></li>
+                        </ul>
+                    </div>
+                </li>
+		    </ul>
+		</nav>
+	</header>
+	
+     <!-- article -->
+      <article>
+            <h3>매장찾기</h3>
+            <div class="store">
+                <h2>가까운 매장 검색</h2>
+                <select name="addressDo" id="addressDo1"></select>
+                <select name="addressSiGunGu" id="addressSiGunGu1"></select>
+                <br>
+                <input type="text" id=d_address />
+                <br>
+                <button>검색</button>
+            </div>
+      </article>
+     <!-- section -->
+      <section>
+            <div class="container">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>매장명</th>
+                            <th>매장주소</th>
+                            <th>매장번호</th>
+                            <th>상세보기</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">의정부휴게소점</a></td>
+                            <td>경기 의정부시 구리포천고속도로 19 (산곡동 304-2)</td>
+                            <td></td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">별내휴게소점</a></td>
+                            <td>경기 남양주시 별내면 광전리 산 114-16</td>
+                            <td>031-524-9773</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">용평리조트점</a></td>
+                            <td>강원 평창군 대관령면 용산리 130 용평리조트 드래곤플라자 2층</td>
+                            <td>033-333-7877</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">내린천 휴게소 카페코나퀸즈</a></td>
+                            <td>강원 인제군 상남면 하남리 371 내린천 휴게소 3층 카페코나퀸즈</td>
+                            <td>033-852-8638</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">코나퀸즈 효정카페점</a></td>
+                            <td>경기 가평군 설악면 송산리 445-2</td>
+                            <td>031-589-7061</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">카페코나퀸즈 매그놀리아점</a></td>
+                            <td>경기 가평군 설악면 미사리로 189 3층</td>
+                            <td>031-589-9640</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">카페코나퀸즈 용산점</a></td>
+                            <td>서울시 용산구 한강로 2가 342번지 B239호 (용산래미안더센트럴)</td>
+                            <td>02-790-5464</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">카페코나퀸즈 청평점</a></td>
+                            <td>경기 가평군 설악면 미사리로 267-293 (송산리 555-9)</td>
+                            <td>070-7721-0005</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">카페코나퀸즈 여수 디오션점</a></td>
+                            <td>전남 여수시 소호로 295 (소호동 923,디오션호텔) 1층 호텔로비 코나퀸즈</td>
+                            <td>061-689-0778</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">카페코나퀸즈 서산점</a></td>
+                            <td>충남 서산시 예천동 1253-1 카페코나퀸즈</td>
+                            <td>041-668-5444</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">카페코나퀸즈 마포점</a></td>
+                            <td>서울 마포구 마포대로 34 (도화동 292-20) 도원빌딩</td>
+                            <td>070-7792-9106</td>
+                            <td><a href="#">VIEW +</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+      </section>
+      <footer>
+        <div id="footer_Area">
+                <img src="./img/Logo3.png" alt="" class="footlogo">
+                <div class="text1">
+                    <p>카페코나퀸즈 주식회사 대표 : 한림 사업자 번호 : 101-86-77975 전화번호 : 02-6459-7770 팩스 : 02-6459-7771</p>
+                    <p>서울시 종로구 익선동 57 메트로빌딩 5층 카페코나퀸즈</p>
+                    <p>COPYRIGHT©2014 KONA QUEEN'S ALL RIGHTS RESERVED.</p>
+                    <div class="sns">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">고객의 소리</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                        <div class="snslogo">
+                            <a href="https://www.facebook.com/cafekonaqueens/" class="snslogo1"></a>
+                            <a href="https://www.instagram.com/konaqueens_official/" class="snslogo2"></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+  </footer>
+  </body>
+</html>

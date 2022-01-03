@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family:"맑은 고딕"}
+
+/*Header_Area*/
+
+
+/*Aarticle_Area*/
+div.Article_Area{position: relative; top:140px;}
+div.Article_Area article{height: 220px; width: 100%; background: url("../img/people/1/bg_visual_story04.jpg") no-repeat top center; background-size: cover;}
+div.Article_Area div{width:1168px; height:220px; margin:0 auto;}
+div.Article_Area h2{width: 1168px; height: 50px; float: left; font-size: 50px; color: #fff; margin-top: 34px; font-weight: 500px;}
+div.Article_Area p{ display: inline-block; float: left; font-size: 18px; margin-top: 31px; color: #fff; line-height: 26px; width:1168px; font-weight: bold;}
+div.Article_Area li a{color: #fff;float: left; font-size:16px; display:inline-block; margin-left: 20px; margin-top: 23px; width:auto; font-weight: bold;}
+div.Article_Area ul li:nth-child(1) a{margin-left: 0px;}
+
+article div li:nth-child(2) a:before{ content: ""; display: inline-block; width: 6px; height: 6px; line-height: 15px;  border-radius: 6px; background-color: #F5BD43; float: left; margin-right: 20px; margin-top: 7px;}
+article div li:nth-child(3) a:before{ content: ""; display: inline-block; width: 6px; height: 6px; line-height: 15px;  border-radius: 6px; background-color: #F5BD43; float: left; margin-right: 20px; margin-top: 7px;}
+
+
+/*Section_Area*/
+/*크루이야기, 업무소개 , 인재채용*/
+div.Section_Area{position: relative; top:140px; margin-bottom: 40px;}
+div.Section_Area nav{width: 450px; height: 20px; margin:0 auto; margin-top: 40px;}
+div.Section_Area nav li{float: left; font-size: 20px; margin-left: 84px; display:block;}
+div.Section_Area nav ul li:nth-child(1){margin-left: 0px; }
+div.Section_Area nav li a{color:#808080;  font-weight: bold;}
+div.Section_Area nav ul li:nth-child(2) a{ color: #db0007; border-bottom:1px solid; padding-bottom: 10px; font-weight: 600;}
+
+/*업무소개(Restaurant Department Management)*/
+
+div.Section_Area div{width:1168px; margin: 0 auto;}
+div.Section_Area h2{font-size: 30px; font-weight: bold; margin-top:80px;}
+div.Section_Area div p:nth-child(2){ margin-top: 39px; color:#808080; font-size: 15px; font-weight: bold;}
+
+/* 표 */
+div.Section_Area div table{width:1168px; height: 560px; margin: 0 auto; margin-top: 54px; font-size:16px; border:none;}
+div.Section_Area div tr{width:1168px; border-bottom:1px solid #d1d1d1;}
+div.Section_Area div table tr:last-child{width:1168px; border-bottom:1px solid #292929;}
+div.Section_Area div table tr:nth-child(1){border-top:2px solid #292929;}
+div.Section_Area div th{width: 292px; height: 111px; padding: 25px 12px; color:#292929; }
+div.Section_Area div td{width: 876px; height: 111px; padding: 25px; color:#808080; border-left:1px solid #808080; font-weight:600;}
+
+/*맥도날드 교육의 힘*/
+div.Section_Area h2.sub_title{margin:100px 0 30px 0; font-size:30px; font-weight: 600; width: 1168px; height: 30px;}
+div.Section_Area p.img{background: url("../img/people/2/img_manager01.jpg") no-repeat; width: 1168px; height: 300px;}
+div.Section_Area div h3{margin: 50px 0 30px 0; font-size: 20px; width: 1168px; height: 20px; color: #DA0000;}
+div.Section_Area div.sub{width: 1168px; height: 240px;}
+div.Section_Area div.sub p{width: 584px; height: 240px; float: left; font-size: 15px; color: #808080; font-weight: bold;word-spacing: -2px; line-height: 30px;}
+div.Section_Area div.sub p:last-child{font-size: 15px; color: #808080; font-weight: bold; margin:0; word-spacing: -2px; line-height: 30px; }
+
+

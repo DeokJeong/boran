@@ -1,0 +1,407 @@
+@charset "UTF-8";
+
+.promotion {
+    width: 100vw;
+    height: 100vh;
+    min-height: 959px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.wrap4 {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.promotion_title {
+    width: 100%;
+    text-align: right;
+    font-size: 4vw;
+    font-family: 'GmarketSansLight';
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.promotion_title p span {
+    color: #734b43;
+    font-size: 5vw;
+    font-family: '777Balsamtint';
+}
+
+
+.promotion_list {
+    width: 100%;
+    height: 82%;
+    background-color: #f2c1bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.btn_list {
+    width: 25%;
+    height: 90%;
+}
+
+.btn_list > li {
+    text-align: center;
+    padding: 0 7% 7% 0 ;
+    box-sizing: border-box;
+}
+
+.btn_list > li > a {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 40px 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #222;
+    font-family: 'GmarketSansBold';
+    font-size: 2vw;
+    display: block;
+    transition: 0.3s ;
+
+}
+
+
+.btn_list > li > a.color {
+    background-color: #d89791;
+    color: #ffffff;
+}
+
+.btn_img {
+    width: 70%;
+    height: 90%;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.btn_img > div > img {
+    width: 100%;
+ 
+}
+
+.btn_img > span {
+    position: absolute;
+    font-size: 3vw;
+    font-family: 'KCC-eunyoung';
+    color: #f2c1bd;
+    padding: 3%;
+}
+
+.btn_img > div:nth-child(2) {
+    position: relative;
+    animation: move1 20s both linear infinite;
+}
+
+@keyframes move1 {
+    0% {top: 0;}
+    50% {top: -275%;}
+    100% {top: 0;}
+}
+
+.btn_img > div:nth-child(3){
+    position: relative;
+    animation: move2 40s both linear infinite;
+}
+
+@keyframes move2 {
+    0% {top: 0;}
+    50% {top: -475%;}
+    100% {top: 0;}
+}
+
+.btn_img > div:last-child{
+    position: relative;
+    animation: move3 30s both linear infinite;
+}
+@keyframes move3 {
+    0% {top: 0;}
+    50% {top: -470%;}
+    100% {top: 0;}
+}
+
+
+/* 데스크탑 */
+    @media screen and (max-width:1799px) {
+        .btn_img > div:nth-child(2) {
+            position: relative;
+            animation: move1 10s both linear infinite;
+        }
+        
+    @keyframes move1 {
+        0% {top: 0;}
+        50% {top: -235%;}
+        100% {top: 0;}
+    }
+    
+    .btn_img > div:nth-child(3){
+        position: relative;
+        animation: move2 13s both linear infinite;
+    }
+    
+    @keyframes move2 {
+        0% {top: 0;}
+        50% {top: -275%;}
+        100% {top: 0;}
+    }
+    
+    .btn_img > div > img {
+        width: 100%;
+        position: absolute;
+    }
+    
+    .btn_img > div:last-child{
+        position: relative;
+        animation: move3 18s both linear infinite;
+    }
+    @keyframes move3 {
+        0% {top: 0;}
+        50% {top: -370%;}
+        100% {top: 0;}
+    }
+}
+
+/* 타블렛 가로 */
+@media screen and (max-width:1199px) {
+    .btn_img > div:nth-child(2) {
+        position: relative;
+        animation: move1 7s both linear infinite;
+    }
+    
+    @keyframes move1 {
+        0% {top: 0;}
+        50% {top: -120%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div:nth-child(3){
+        position: relative;
+        animation: move2 10s both linear infinite;
+    }
+
+    @keyframes move2 {
+        0% {top: 0;}
+        50% {top: -150%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div > img {
+        width: 100%;
+        position: absolute;
+    }
+
+    .btn_img > div:last-child{
+        position: relative;
+        animation: move3 15s both linear infinite;
+    }
+    
+    @keyframes move3 {
+        0% {top: 0;}
+        50% {top: -200%;}
+        100% {top: 0;}
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .btn_img > div:nth-child(2) {
+        position: relative;
+        animation: move1 7s both linear infinite;
+    }
+    
+    @keyframes move1 {
+        0% {top: 0;}
+        50% {top: -90%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div:nth-child(3){
+        position: relative;
+        animation: move2 10s both linear infinite;
+    }
+
+    @keyframes move2 {
+        0% {top: 0;}
+        50% {top: -120%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div > img {
+        width: 100%;
+        position: absolute;
+    }
+
+    .btn_img > div:last-child{
+        position: relative;
+        animation: move3 15s both linear infinite;
+    }
+    
+    @keyframes move3 {
+        0% {top: 0;}
+        50% {top: -170%;}
+        100% {top: 0;}
+    }
+}
+
+/* 모바일 가로, 타블렛 세로 */
+@media screen and (max-width:899px) {
+    .btn_img > div:nth-child(2) {
+        position: relative;
+        animation: move1 7s both linear infinite;
+    }
+    
+    @keyframes move1 {
+        0% {top: 0;}
+        50% {top: -65%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div:nth-child(3){
+        position: relative;
+        animation: move2 10s both linear infinite;
+    }
+
+    @keyframes move2 {
+        0% {top: 0;}
+        50% {top: -85%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div > img {
+        width: 100%;
+        position: absolute;
+    }
+
+    .btn_img > div:last-child{
+        position: relative;
+        animation: move3 15s both linear infinite;
+    }
+    
+    @keyframes move3 {
+        0% {top: 0;}
+        50% {top: -130%;}
+        100% {top: 0;}
+    }
+}
+
+/* 모바일 세로 */
+@media screen and (max-width:599px) {
+    .btn_img > div:nth-child(2) {
+        animation: move1 5s both linear infinite;
+    }
+    
+    @keyframes move1 {
+        0% {top: 0;}
+        50% {top: -10%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div:nth-child(3){
+        animation: move2 10s both linear infinite;
+    }
+
+    @keyframes move2 {
+        0% {top: 0;}
+        50% {top: -25%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div:last-child{
+        animation: move3 15s both linear infinite;
+    }
+    
+    @keyframes move3 {
+        0% {top: 0;}
+        50% {top: -50%;}
+        100% {top: 0;}
+    }
+}
+
+@media screen and (max-width:599px) {
+    .side_nav {
+        display: none;
+    }
+    .promotion {
+        width: 100vw;
+        height: 100vh;
+    }
+    .wrap4 {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        margin: auto;
+        width: 85%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .promotion_title {
+        width: 100%;
+        text-align: right;
+        font-size: 8vw;
+        margin-bottom: 0px;
+    }
+    .promotion_title p span {
+        font-size: 12vw;
+    }
+
+    .btn_img > div:nth-child(2) {
+        animation: move1 5s both linear infinite;
+    }
+    .btn_list > li > a {
+        width: 100%;
+        height: 100%;
+        padding: 40px 0 40px 0;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        color: #222;
+        font-family: 'GmarketSansBold';
+        font-size: 3.3vw;
+        display: block;
+        transition: 0.3s ;
+    
+    }
+    
+    @keyframes move1 {
+        0% {top: 0;}
+        50% {top: -10%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div:nth-child(3){
+        animation: move2 10s both linear infinite;
+    }
+
+    @keyframes move2 {
+        0% {top: 0;}
+        50% {top: -25%;}
+        100% {top: 0;}
+    }
+
+    .btn_img > div:last-child{
+        animation: move3 15s both linear infinite;
+    }
+    
+    @keyframes move3 {
+        0% {top: 0;}
+        50% {top: -50%;}
+        100% {top: 0;}
+    }
+
+    .btn_list > li > a {
+        padding: 15px;
+    }
+    .promotion_title img {
+        width: 100%;
+    }
+}
