@@ -178,24 +178,43 @@ article {
     overflow: hidden;
 }
 
-.event ul {
-    position: absolute;
-    width: 500%;
-    height: 400px;
+.event { 
+    position:relative;
+    width:100%; min-width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+    height:400px; 
+    background:#8c908c;
 }
-
-.event ul li {
-    float: left;
-    width: 20%;
+.event ul { 
+    position:relative; 
+    float:left; 
+    width:100%; 
+    height:400px;
 }
+.event li { 
+    position:absolute; 
+    width:100%;
+    height:400px;
+}
+.event li a {
+    display:block;
+}
+.event li a img {
+    width: 100%; 
+}
+.event .visual_0{left:0px; }
+.event .visual_1{left: 100%;}
+.event .visual_2{left: 200%;}
+.event .visual_3{left: 300%;}
 
 
 
 /* BUTTON */
 #buttonList li{
     position: relative;
-    top: 370px;
-    left: 50%;
+    top: -40px;
+    left: 48%;
     transform: translate(-50%, 0);
     background:url("../images/btnVisual.png") 0 -18px no-repeat;
     width: 10px; 
@@ -205,6 +224,7 @@ article {
     margin:0 10px; 
     cursor:pointer;
     overflow: hidden;
+    z-index:9999;
 }
 #buttonList li.on { 
     background-position:1px -3px;
