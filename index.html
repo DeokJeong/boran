@@ -43,8 +43,8 @@
     <script src="./js/slider.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/popup.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
 	  $(document).ready(function() {
 		emailjs.init("user_9dRi7pfoIXJRYNUH1Pi7F");		
         //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
@@ -81,6 +81,7 @@
 </head>
 <body>
     <header>
+      <h2 class="hidden">해더영역</h2>
         <div class="logo">
           <img src="./image/logo.png" alt="로고" style="width: 50px;">
         </div>
@@ -118,6 +119,7 @@
         </dl>
     </header>
     <section class="mainpage main_bg" id="mainpage">
+      <h2 class="hidden">섹션영역</h2> 
         <div class="container">
             <div class="text"></div>
         </div>
@@ -141,6 +143,7 @@
     </section>
 
     <section class="about" id="about">
+      <h2 class="hidden">섹션영역</h2> 
         <div class="info_popup">
             <img src="./image/inpographic.jpg" alt="인포그래픽">
         </div>
@@ -180,13 +183,14 @@
                     <li class="resume">
                         RESUME<span>&nbsp;♥</span>
                         <button id="infographic" type="button">인포그래픽</button>
-                        <button type="button" onclick="location.href='#';">이력서</button>
+                        <button type="button" onclick="location.href='https://broadleaf-canopy-82c.notion.site/Web-Publisher-fba4afef4d6d453fa5b9e82fafc9c652';">이력서</button>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="skills main_bg" id="skills">
+      <h2 class="hidden">섹션영역</h2> 
         <div class="wrap3">
             <div class="skills_title">
                 <p>MY SKILLS<span>&nbsp;♥</span></p>
@@ -288,6 +292,7 @@
         </div>
     </section>
     <section class="portfolio main_bg" id="portfolio">
+      <h2 class="hidden">섹션영역</h2> 
       <div class="wrap6">
           <div class="portfolio_title">
                   <p>CODING WEB<span>&nbsp;♥</span></p>
@@ -329,7 +334,7 @@
                       <div class="blog-slider__title">03.MCdonalds</div>
                       <div class="blog-slider__text"><span>프로젝트 :</span>&nbsp;조별 프로젝트<br><br><span>기술 스택 :</span>&nbsp;PS/AI/HTML/CSS<br>
                         <br><span>설명:</span><br>그동안 이해한 HTML과 CSS를 사용하여 전체적인 웹 사이트를 제작했습니다.<br>메인페이지와 header,footer 부분을 담당했습니다.</div>
-                        <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.09.30~2021.10.22 ( 22일 )</div>
+                        <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.09.30~2021.10.22 ( 23일 )</div>
                       <a href="./link/Mcdonald/index.html" target="_blank" class="blog-slider__button">사이트로 이동</a>
                   </div>
                 </div>
@@ -339,10 +344,10 @@
                     <img src="./image/jardin.png" alt="쟈뎅">
                   </div>
                   <div class="blog-slider__content">
-                      <div class="blog-slider__title">04.JADIN</div>
+                      <div class="blog-slider__title">04.JARDIN</div>
                       <div class="blog-slider__text"><span>프로젝트 :</span>&nbsp;개인 프로젝트<br><br><span>기술 스택 :</span>&nbsp;HTML/CSS/jQuery<br>
                         <br><span>설명:</span><br>jQuery를 접하고 연습하기위해 제작한 웹 사이트 입니다. </div>
-                        <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.09.15~2021.09.17 ( 2일 )</div>
+                        <div class="blog-slider__code"><span>작업기간 :</span>&nbsp;2021.10.29~2021.11.02 ( 5일 )</div>
                       <a href="./link/Jardin/index.html" target="_blank" class="blog-slider__button">사이트로 이동</a>
                   </div>
                 </div>
@@ -380,6 +385,7 @@
       </div>
     </section>
     <section class="snsbanner main_bg" id="banner">
+      <h2 class="hidden">섹션영역</h2> 
       <div class="wrap5">
           <div class="card-container banner_t">
             <div class="banner_title">
@@ -388,64 +394,58 @@
           </div>
           <div class="card-container">
             <img src="./image/tea.jpg" alt="아워티">
-            <span class="overlay bg-dark">
+            <div class="overlay bg-dark">
               <div class="line overlay_text">
                 아워티
                 <div class="popupopen_tea overlay_sbtext">
                   자세히보기
                 </div>
               </div>
-            </span>
+            </div>
           </div>
           <div class="card-container">
             <img src="./image/banner04.png" alt="sweet cake">
-            <span class="overlay bg-dark">
+            <div class="overlay bg-dark">
               <div class="line overlay_text">
                 SWEET
                 <div class="popupopen_cake overlay_sbtext">
                   자세히보기
                 </div>
               </div>
-            </span>
+            </div>
           </div>
           <div class="card-container">
             <img src="./image/banner02.png" alt="스탬프투어">
-            <span class="overlay bg-dark">
-              <span class="overlay bg-dark">
+              <div class="overlay bg-dark">
                 <div class="line overlay_text">
                   스탬프 투어
                   <div class="popupopen_stamp overlay_sbtext">
                     자세히보기
                   </div>
                 </div>
-              </span>
-            </span>
+              </div>
           </div>
           <div class="card-container">
             <img src="./image/banner03.png" alt="블랙프라이데이">
-            <span class="overlay bg-dark">
-              <span class="overlay bg-dark">
+              <div class="overlay bg-dark">
                 <div class="line overlay_text">
                   블랙프라이데이
                   <div class="popupopen_blf overlay_sbtext">
                     자세히보기
                   </div>
                 </div>
-              </span>
-            </span>
+              </div>
           </div>
           <div class="card-container">
             <img src="./image/banner01.png" alt="차박여행">
-            <span class="overlay bg-dark">
-              <span class="overlay bg-dark">
+              <div class="overlay bg-dark">
                 <div class="line overlay_text">
                   차박여행
                   <div class="popupopen_car overlay_sbtext">
                     자세히보기
                   </div>
                 </div>
-              </span>
-            </span>
+              </div>
           </div>
       </div>
         <div class="tea_popup close_popup main_popup">
@@ -545,6 +545,7 @@
         </div>
     </section>
     <section class="promotion main_bg" id="promotion">
+      <h2 class="hidden">섹션영역</h2> 
       <div class="wrap4">
           <div class="promotion_title">
               <p>MY PROMOTION<span>&nbsp;♥</span></p>
@@ -582,9 +583,10 @@
       </div>
     </section>
     <section class="contact" id="contact">
+      <h2 class="hidden">섹션영역</h2> 
       <div class="wrap7">
           <div class="container">  
-            <form id="contact_data" action="" method="post">
+            <form id="contact_data" method="post">
               <div class="contact_title">
                 <p>CONTACT</p>
               </div>
@@ -603,6 +605,7 @@
       </div>
     </section>
     <footer>
+      <h2 class="hidden">푸터영역</h2>
       <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
     </footer>
 </body>
