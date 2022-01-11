@@ -2,7 +2,7 @@
 
 .contact{
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     position: relative;
     background: #f2c1bd;
 }
@@ -193,11 +193,32 @@ footer {
     height: 50px;
     line-height: 50px;
     background-color: #d89791;
+    box-sizing: border-box;
+    overflow: hidden;
+    
 }
 
-footer p {
+.footer_text {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text p {
     text-align: center;
     font-family: '777Balsamtint';
     font-size: 1.3vw;
     letter-spacing: 1px;
+    vertical-align: center;
+}
+
+.footer_text p:nth-child(2) {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.footer_text p:last-child{
+  margin-left: 10px;
+  margin-top: 5px;
 }
