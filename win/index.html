@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="loading">
+      <div class="img_loading">
+        <img src="./images/love.jpg" alt="커플사진">
+      </div>
+      <div class="login_page">
+        <div class="login">
+          <div class="login_img">
+            <img src="./images/mangbung.jpg" alt="망붕이">
+          </div>
+          <div class="login_name">NAM BO RA</div>
+          <div class="login_pass">
+            <input type="password" />
+            <i class="fa-regular fa-eye fa-3x on"></i>
+            <button class="move">접속</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('input').val('♥ Welcome To My Profile ♥')
+      $('.login_pass i').on('click', function () {
+        $('input').toggleClass('active');
+        if ($('input').hasClass('active')) {
+          $(this).attr('class', "fa-regular fa-eye-slash fa-eye fa-3x off")
+            .prev('input').attr('type', "text");
+          $('.move').stop().fadeIn(1000);
+        } else {
+          $(this).attr('class', "fa-regular fa-eye fa-3x on")
+            .prev('input').attr('type', 'password');
+          $('.move').stop().fadeOut(1000);
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
