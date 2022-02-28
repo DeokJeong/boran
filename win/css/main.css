@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 * { margin : 0; padding : 0; box-sizing: border-box;}
-html { font-size: 10px; }
+html { font-size: 10px; font-family: 'Noto Sans KR', sans-serif;}
+a { text-decoration: none; color: #ffffff;}
+ul,li { list-style: none;}
 .wrap { width: 100%; height: 100vh; }
 .loading { width: 100%; height: 100%; background-color: rgb(61, 61, 61); position: relative;}
 .loading .img_loading { width: 100%; height: 100%; z-index: 1;}
@@ -16,3 +18,17 @@ html { font-size: 10px; }
 .login_pass .on{ position: absolute; right: 10px; bottom: 18px; color: rgb(2, 2, 2); transition: 1s;}
 .login_pass .off{ position: absolute; right: 80px; bottom: 18px; color: rgb(2, 2, 2); transition: 1s; }
 .login_pass .move { display: none; width: 70px; height: 50px; border : none; background-color: rgba(70, 70, 70, 0.7); font-family: 'Noto Sans KR', sans-serif; font-weight: 700; color: #fff; font-size: 2rem;}
+
+footer { width: 100%; position: fixed; bottom: 0; background-color: rgb(24, 24, 24); color: #fff;}
+.statusbar { display: flex; justify-content: space-between;}
+.statusbar ul { display : flex; justify-content: space-between; height: 40px; line-height: 40px; font-size: 1.4rem;} 
+.statusbar ul li { text-align: center;}
+.statusbar ul:first-child li:nth-child(1) { width: 50px;}
+.start_btn a { display: block; width: 100%;}
+.start_btn a:hover { display: block; color: #6ca9d9; background-color: #272727; width: 100%;}
+.statusbar ul:first-child li:nth-child(2) { width: 300px; position: relative;}
+.statusbar ul:first-child li:nth-child(2) .fa-magnifying-glass { position: absolute; color: #272727; font-size: 1.8rem; transform: scaleX(-1); left:3%; top:11px;}
+
+.statusbar ul:first-child .search_menu { width: 100%; height: 40px; border: none; padding-left: 40px; padding-right: 20px;}
+.fa-2x { font-size: 1.8rem !important;}
+
