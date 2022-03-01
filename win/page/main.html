@@ -14,7 +14,9 @@
 </head>
 
 <body>
-
+  <div class="wrapper">
+    <img src="../images/main_img.jpg" alt="">
+  </div>
 
   <!-- 작업표시줄 -->
   <footer>
@@ -32,9 +34,39 @@
         <li>스피커</li>
         <li>한영</li>
         <li>날짜</li>
-        <li>?</li>
+        <li><a href="#" id="clock">00:00</a></li>
       </ul>
     </div>
+    <script>
+      var clockTarget = document.getElementById("clock");
+
+
+      function clock() {
+        var date = new Date();
+
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1
+        month = month < 10 ? `0${month}` : month;
+        var clockDate = date.getDate();
+
+        var hours = date.getHours();
+        var ampm = Number(hours) < 12 ? "오전" : "오후";
+        hours = hours < 12 ? `${hours}` : hours - 12;
+        var minutes = date.getMinutes();
+        // var seconds = date.getSeconds();
+
+
+        clockTarget.innerText = `${ampm} ${hours}:${minutes < 10 ? `0${minutes}` : minutes}\n` +
+          `${year}-${month}-${clockDate < 10 ? `0${clockDate}` : clockDate}`;
+      }
+
+      // :${seconds < 10 ? `0${seconds}` : seconds} 초
+      function init() {
+        clock();
+        setInterval(clock, 1000);
+      }
+      init();
+    </script>
   </footer>
 </body>
 

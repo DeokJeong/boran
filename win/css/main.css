@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
 * { margin : 0; padding : 0; box-sizing: border-box;}
-html { font-size: 10px; font-family: 'Noto Sans KR', sans-serif;}
+html { font-size: 10px; font-family: 'Noto Sans KR', sans-serif; animation: fadein 3s; }
+@keyframes fadein {
+	0% { opacity: 0; }
+    100% { opacity: 1;}
+}
 a { text-decoration: none; color: #ffffff;}
 ul,li { list-style: none;}
+body { overflow-y: hidden ;}
 .wrap { width: 100%; height: 100vh; }
 .loading { width: 100%; height: 100%; background-color: rgb(61, 61, 61); position: relative;}
 .loading .img_loading { width: 100%; height: 100%; z-index: 1;}
@@ -17,9 +22,12 @@ ul,li { list-style: none;}
 .login_pass input{ position: relative;  width: 350px; height: 50px; background-color: rgba(255, 255, 255,0.7); border: 0; color: rgb(32, 32, 32); text-indent: 10px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 2rem;}
 .login_pass .on{ position: absolute; right: 10px; bottom: 18px; color: rgb(2, 2, 2); transition: 1s;}
 .login_pass .off{ position: absolute; right: 80px; bottom: 18px; color: rgb(2, 2, 2); transition: 1s; }
-.login_pass .move { display: none; width: 70px; height: 50px; border : none; background-color: rgba(70, 70, 70, 0.7); font-family: 'Noto Sans KR', sans-serif; font-weight: 700; color: #fff; font-size: 2rem;}
+.login_pass .move { display: none; width: 70px; height: 50px; border : none; background-color: rgba(70, 70, 70, 0.7); font-family: 'Noto Sans KR', sans-serif; font-weight: 700; color: #fff; font-size: 2rem; text-align: center; line-height: 50px;}
 
-footer { width: 100%; position: fixed; bottom: 0; background-color: rgb(24, 24, 24); color: #fff;}
+.wrapper { width: 100%; height: 100%; }
+.wrapper > img {width: 100%;}
+
+footer { width: 100%; position: fixed; bottom: 0; background-color: rgb(16, 16, 16); color: #fff;}
 .statusbar { display: flex; justify-content: space-between;}
 .statusbar ul { display : flex; justify-content: space-between; height: 40px; line-height: 40px; font-size: 1.4rem;} 
 .statusbar ul li { text-align: center;}
@@ -31,4 +39,7 @@ footer { width: 100%; position: fixed; bottom: 0; background-color: rgb(24, 24, 
 
 .statusbar ul:first-child .search_menu { width: 100%; height: 40px; border: none; padding-left: 40px; padding-right: 20px;}
 .fa-2x { font-size: 1.8rem !important;}
+
+.statusbar ul:last-child li:last-child { line-height: 13px; margin-right: 15px;}
+.statusbar ul:last-child li:last-child a { display: block; font-size: 1.3rem; color:#ffffff; padding-top: 8px; }
 
